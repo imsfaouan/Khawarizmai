@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* 1. الأساس والخطوط العصرية */
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. تنسيق المقال الاحترافي */
+.prose {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  line-height: 2.2 !important; /* مساحة واسعة للقراءة */
+  font-size: 1.18rem;
+  color: #334155;
+}
+
+/* تحسين الخط العربي */
+[dir="rtl"] .prose {
+  line-height: 2.4 !important;
+  font-weight: 500;
+}
+
+/* 3. العناوين - بدون خطوط أفقية (Clean & Bold) */
+.prose h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #020617;
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.prose h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* حيدنا الـ border-bottom اللي كانت مبرزطاك */
+  border-bottom: none !important; 
+}
+
+/* اللمسة العصرية: خط عمودي ملون بجانب العنوان الفرعي */
+.prose h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 1.8rem;
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6); /* تدرج لوني عصري */
+  border-radius: 10px;
+}
+
+/* 4. الفقرات والقوائم */
+.prose p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.prose ul {
+  margin-bottom: 2rem;
+  list-style-type: none; /* حيدنا النقط التقليدية */
+  padding-right: 1rem;
+}
+
+/* تعويض النقط التقليدية بإيموجي أو شكل عصري */
+.prose li::before {
+  content: "•";
+  color: #3b82f6;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-right: -1em;
+}
+
+/* 5. الصور بستايل Apple (Shadow خفيف وزوايا دائرية) */
+.prose img {
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  border: 1px solid #f1f5f9;
+}
+
+/* 6. زر العودة العصري */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.6rem;
+  background-color: #f8fafc;
+  color: #0f172a;
+  border-radius: 12px;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #020617;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}

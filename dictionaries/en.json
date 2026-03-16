@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "home": "Home",
+    "news": "News",
+    "tools": "Tools",
+    "projects": "Projects",
+    "open_source": "Open Source",
+    "academy": "Certified Courses"
+  },
+  "descriptions": {
+    "news": "The latest global news and technologies in artificial intelligence.",
+    "tools": "Discover the best AI fields and tools.",
+    "projects": "Ideas and AI projects in the field of artificial intelligence and technology.",
+    "open_source": "AI models, algorithms, and open-source software tools.",
+    "academy": "Trusted courses and certifications to develop your project and career path."
+  },
+  "hero": {
+   "title": "Khawarizm AI – Your Platform for Innovation and Smart Solutions",
+    "subtitle": "From AI news to projects and courses, discover everything you need to develop your skills."
+  }
+}

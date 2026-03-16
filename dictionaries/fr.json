@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "news": "Actualités",
+    "tools": "Outils",
+    "projects": "Projets",
+    "open_source": "Open Source",
+    "academy": "Formations certifiées"
+  },
+  "descriptions": {
+    "news": "Les dernières actualités et technologies mondiales de l’intelligence artificielle.",
+    "tools": "Découvrez les meilleurs domaines et outils de l’IA.",
+    "projects": "Idées et projets d’IA dans le domaine de l’intelligence artificielle et de la technologie.",
+    "open_source": "Modèles d’IA, algorithmes et outils logiciels open source.",
+    "academy": "Formations et certifications fiables pour développer votre projet et votre carrière."
+  },
+  "hero": {
+ "title": "Khawarizm AI – Votre Plateforme pour l'Innovation et les Solutions Intelligentes",
+    "subtitle": "De l'actualité de l'IA aux projets et cours, découvrez tout ce dont vous avez besoin pour développer vos compétences."
+  }
+}
