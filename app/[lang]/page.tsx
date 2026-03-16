@@ -1,19 +1,25 @@
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
 const homeI18n: any = {
   ar: { 
     welcome: "مرحباً بك في Khawarizmai", 
     subtitle: "منصة متكاملة للأخبار، الأدوات، برمجة، و الأفكار الذكية", 
+    latestTitle: "آخر التحديثات والمقالات",
     dir: "rtl" 
   },
   fr: { 
     welcome: "Bienvenue sur Khawarizmai", 
     subtitle: "Une plateforme intégrée pour l'actualité, les outils, la programmation et les idées intelligentes", 
+    latestTitle: "Dernières mises à jour",
     dir: "ltr" 
   },
   en: { 
     welcome: "Welcome to Khawarizmai", 
     subtitle: "An integrated platform for news, tools, programming, and smart ideas", 
+    latestTitle: "Latest Updates",
     dir: "ltr" 
   }
 };
@@ -41,30 +47,79 @@ const categories = [
     en: { title: "Certified AI Courses", desc: "Discover certified global courses to develop your skills in the AI world.", btnText: "Start learning now" } },
 ];
 
+async function getLatestPosts(lang: string) {
+  const categoriesFolders = ['tools', 'open-source', 'projects', 'academy'];
+  let allPosts: any[] = [];
+
+  for (const cat of categoriesFolders) {
+    const dirPath = path.join(process.cwd(), `content/${lang}/${cat}`);
+    if (fs.existsSync(dirPath)) {
+      const files = fs.readdirSync(dirPath);
+      files.forEach(file => {
+        if (file.endsWith('.md')) {
+          const content = fs.readFileSync(path.join(dirPath, file), 'utf-8');
+          const { data } = matter(content);
+          allPosts.push({
+            slug: file.replace('.md', ''),
+            category: cat,
+            title: data.title,
+            date: data.date || '2026-01-01',
+          });
+        }
+      });
+    }
+  }
+
+  return allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
+}
+
 export default async function HomePage(props: { params: Promise<{ lang: string }> }) {
   const { lang } = await props.params;
   const dict = homeI18n[lang] || homeI18n.en;
+  const latestPosts = await getLatestPosts(lang);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6" dir={dict.dir}>
-      <div className="max-w-6xl w-full text-center space-y-16">
+    <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6" dir={dict.dir}>
+      <div className="max-w-6xl w-full text-center space-y-16 pb-20">
         
         <header className="space-y-6 pt-10">
           <div className="inline-block px-5 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-black animate-pulse shadow-sm">
             Khawarizmai Engine
           </div>
-          
           <h1 className="text-5xl md:text-7xl font-black tracking-tight pb-3 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
             {dict.welcome}
           </h1>
-          
-          {/* الوصف الجديد اللي طلبتي */}
           <p className="text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
             {dict.subtitle}
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 1. قسم آخر 5 مقالات (طلع للفوق) */}
+        {latestPosts.length > 0 && (
+          <div className="space-y-8 pt-5">
+            <h3 className="text-3xl font-black text-slate-800 text-start border-b-4 border-purple-500 inline-block">
+              {dict.latestTitle}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {latestPosts.map((post) => (
+                <Link 
+                  key={post.slug}
+                  href={`/${lang}/${post.category}/${post.slug}`}
+                  className="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition-all text-start group"
+                >
+                  <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">{post.category}</span>
+                  <h4 className="text-lg font-black text-slate-800 mt-2 group-hover:text-blue-600 transition-colors leading-snug">
+                    {post.title}
+                  </h4>
+                  <p className="text-xs text-slate-400 mt-3 font-medium">{post.date}</p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* 2. شبكة التصنيفات الأساسية (نزلت لتحت) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
           {categories.map((cat: any) => (
             <Link 
               key={cat.id} 
@@ -72,17 +127,13 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
               className="group relative p-10 bg-white rounded-[2.5rem] shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 hover:-translate-y-2 overflow-hidden text-start flex flex-col min-h-[220px]"
             >
               <div className={`absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b ${cat.color} group-hover:w-3 transition-all duration-300`}></div>
-              
               <h2 className="text-2xl font-black text-slate-800 mb-4 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-blue-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                 {cat[lang]?.title || cat.en.title}
               </h2>
-              
               <p className="text-slate-500 text-sm leading-loose mb-6 flex-grow font-medium">
                 {cat[lang]?.desc || cat.en.desc}
               </p>
-
               <div className="mt-auto flex items-center gap-2 text-sm font-black text-blue-600 group-hover:text-purple-600 transition-colors">
-                {/* النص الجديد ديال الزر */}
                 <span>{cat[lang]?.btnText || cat.en.btnText}</span>
                 <span className={`transform transition-transform ${lang === 'ar' ? 'group-hover:-translate-x-2' : 'group-hover:translate-x-2'}`}>
                   {lang === 'ar' ? '←' : '→'}

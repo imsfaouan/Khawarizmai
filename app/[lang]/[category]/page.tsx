@@ -23,6 +23,9 @@ export default async function CategoryPage(props: { params: Promise<{ lang: stri
       const { data } = matter(fileContent);
       return { slug: filename.replace('.md', ''), ...data };
     });
+
+    // --- السطر المعدل للترتيب من الأحدث للأقدم ---
+    posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   }
 
   return (
