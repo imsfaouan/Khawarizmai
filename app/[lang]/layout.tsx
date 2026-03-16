@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import '../globals.css';
 import { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/react";
 
 // دالة باش السيت يعرف اللغات اللي عندنا ويوجدهم مسبقاً (SSG)
 export async function generateStaticParams() {
@@ -36,6 +37,9 @@ export default async function RootLayout(props: { children: React.ReactNode, par
         <main className="min-h-screen">
           {children}
         </main>
+        
+        {/* تفعيل Vercel Analytics */}
+        <Analytics />
         
         <footer className="py-10 border-t border-slate-100 bg-slate-50/50">
           <div className="max-w-7xl mx-auto px-6 text-center">
