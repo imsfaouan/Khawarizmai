@@ -58,7 +58,6 @@ Parfois, l'outil est un **script** ou une bibliothèque qui ne peut pas être tr
 
 Dans le monde de l'Open Source, le pouvoir réside dans l'expérimentation. **GitHub** est votre porte d'entrée vers des outils professionnels gratuits. Désormais, ces dossiers ne sont plus des "codes mystérieux", mais des outils qui n'attendent que vous.
 
-**Avez-vous déjà eu du mal à installer un programme spécifique ? Partagez le lien du projet dans les commentaires, et je vous guiderاي à travers l'installation étape par étape !**
 
 ---
 **Lien de la plateforme :** [GitHub.com](https://github.com)
