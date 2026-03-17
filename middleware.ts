@@ -16,6 +16,6 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // هاد السطر هو المهم: كينقز الملفات التقنية باش ما يوقعش Loop
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
-}
+  // هاد السطر كيقول للـ Middleware يتجاهل الملفات التقنية بحال sitemap و robots و الصور
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt|.*\\.png$).*)'],
+};
