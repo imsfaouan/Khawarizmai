@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://khawarizmai.com'; // غادي تبدلو ملي تشري الدومين
+  const baseUrl = 'https://khawarizmai.vercel.app'; // غادي تبدلو ملي تشري الدومين
   const langs = ['ar', 'en', 'fr'];
   const categories = ['news', 'tools', 'projects', 'open-source', 'academy'];
 

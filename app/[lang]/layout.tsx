@@ -23,6 +23,10 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     title: meta.title,
     description: meta.desc,
     icons: { icon: '/favicon.ico' },
+    // إضافة كود التحقق من Google Search Console
+    verification: {
+      google: 'google82ae0eabfd315b7e',
+    },
   };
 }
 
