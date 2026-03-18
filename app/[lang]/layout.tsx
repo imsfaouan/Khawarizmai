@@ -27,7 +27,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     icons: { icon: '/favicon.ico' },
     // كود التحقق من Google Search Console
     verification: {
-      google: 'hd8vSauB4oOyAEkQT-AqRp3cMg92_xVE25JCYlGQsPc',
+      google: '1N6QvRZoXk29rXbtYFf9by1G-DBF3Z-YSQOLw0XVqcM',
     },
     // الروابط البديلة باش جوجل يفهم تعدد اللغات
     alternates: {
