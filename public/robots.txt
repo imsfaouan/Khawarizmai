@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://khawarizmai.vercel.app/sitemap.xml
+Sitemap: https://www.khawarizmai.xyz/sitemap.xml
