@@ -20,23 +20,12 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
   const meta = titles[lang] || titles.ar;
 
   return {
-    // تحديد الدومين الرسمي كقاعدة أساسية لجميع الروابط
-    metadataBase: new URL('https://www.khawarizmai.xyz'),
     title: meta.title,
     description: meta.desc,
     icons: { icon: '/favicon.ico' },
-    // كود التحقق من Google Search Console
+    // إضافة كود التحقق الجديد من Google Search Console
     verification: {
       google: '1N6QvRZoXk29rXbtYFf9by1G-DBF3Z-YSQOLw0XVqcM',
-    },
-    // الروابط البديلة باش جوجل يفهم تعدد اللغات
-    alternates: {
-      canonical: `/${lang}`,
-      languages: {
-        'ar': '/ar',
-        'en': '/en',
-        'fr': '/fr',
-      },
     },
   };
 }
