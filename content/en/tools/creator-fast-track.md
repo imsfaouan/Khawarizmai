@@ -1,7 +1,7 @@
 ---
 title: "Opportunity of a Lifetime? Meta Pays You Up to $3,000 Monthly to Lure You from TikTok and YouTube! Everything You Need to Know About Creator Fast Track"
 description: "Are you a content creator? Meta has launched the Creator Fast Track program to attract influencers with guaranteed monthly salaries of up to $3,000 for just 15 videos. Discover the requirements, how to apply, and why you don't need a specific view count!"
-image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/fb7"
+image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/fb7.png"
 date: "2026-03-21"
 category: "tools"
 ---

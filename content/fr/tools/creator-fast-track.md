@@ -1,7 +1,7 @@
 ---
 title: "L'opportunité d'une vie ? Meta vous paie jusqu'à 3 000 $ par mois pour vous attirer loin de TikTok et YouTube ! Tout savoir sur le Creator Fast Track"
 description: "Êtes-vous un créateur de contenu ? Meta a lancé le programme Creator Fast Track pour attirer les influenceurs avec des salaires mensuels garantis allant jusqu'à 3 000 $ pour seulement 15 vidéos. Découvrez les conditions, comment postuler et pourquoi vous n'avez pas besoin d'un nombre de vues spécifique !"
-image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/fb7"
+image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/fb7.png"
 date: "2026-03-21"
 category: "tools"
 ---
