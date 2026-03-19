@@ -2,6 +2,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import Newsletter from '@/components/Newsletter'; // زدنا هادي
 
 const homeI18n: any = {
   ar: { 
@@ -74,13 +75,17 @@ async function getLatestPosts(lang: string) {
 }
 
 export default async function HomePage(props: { params: Promise<{ lang: string }> }) {
-  const { lang } = await props.params;
+  // هادي هي الخطوة الضرورية لحل الخطأ (Await params)
+  const resolvedParams = await props.params; 
+  const lang = resolvedParams.lang;
+  
   const dict = homeI18n[lang] || homeI18n.en;
+  // دابا lang ولات واجدة ومحسوبة:
   const latestPosts = await getLatestPosts(lang);
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6" dir={dict.dir}>
-      <div className="max-w-6xl w-full text-center space-y-16 pb-20">
+      <div className="max-w-6xl w-full text-center space-y-16 pb-20 text-right">
         
         <header className="space-y-6 pt-10">
           <div className="inline-block px-5 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-black animate-pulse shadow-sm">
@@ -92,9 +97,14 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
           <p className="text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
             {dict.subtitle}
           </p>
+
+          {/* زدنا الخانة هنا تحت العنوان مباشرة */}
+          <div className="max-w-md mx-auto mt-8">
+             <Newsletter />
+          </div>
         </header>
 
-        {/* 1. قسم آخر 5 مقالات (طلع للفوق) */}
+        {/* قسم آخر 5 مقالات */}
         {latestPosts.length > 0 && (
           <div className="space-y-8 pt-5">
             <h3 className="text-3xl font-black text-slate-800 text-start border-b-4 border-purple-500 inline-block">
@@ -118,7 +128,7 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
           </div>
         )}
 
-        {/* 2. شبكة التصنيفات الأساسية (نزلت لتحت) */}
+        {/* شبكة التصنيفات الأساسية */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
           {categories.map((cat: any) => (
             <Link 

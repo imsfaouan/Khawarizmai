@@ -1,58 +1,31 @@
-import Navbar from '@/components/Navbar';
-import '../globals.css';
-import { Metadata } from 'next';
-import { Analytics } from "@vercel/analytics/react";
+<section className="flex flex-col items-center justify-center text-center px-4 py-20 min-h-[60vh]">
+  
+  {/* Khawarizmai Engine - Badge */}
+  <span className="bg-purple-100 text-purple-700 text-xs font-semibold px-3 py-1 rounded-full mb-6">
+    Khawarizmai Engine
+  </span>
 
-// دالة باش السيت يعرف اللغات اللي عندنا ويوجدهم مسبقاً (SSG)
-export async function generateStaticParams() {
-  return [{ lang: 'ar' }, { lang: 'en' }, { lang: 'fr' }];
-}
+  {/* العنوان الرئيسي - مرحبا بك */}
+  <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 mb-4">
+    مرحباً بك في <span className="text-blue-600">Khawarizmai</span>
+  </h1>
 
-// دالة لجلب العناوين والوصف على حسب اللغة (SEO)
-export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-  const { lang } = await props.params;
-  const titles: any = {
-    ar: { title: 'Khawarizmai - منصة الذكاء الاصطناعي', desc: 'إكتشف عالم الـ AI، الأدوات الذكية، والمشاريع البرمجية المفتوحة.' },
-    fr: { title: 'Khawarizmai - Plateforme IA', desc: 'Découvrez le monde de l\'IA, les outils smart et les projets open-source.' },
-    en: { title: 'Khawarizmai - AI Platform', desc: 'Explore the world of AI, smart tools, and open-source projects.' }
-  };
+  {/* العنوان الفرعي */}
+  <p className="text-gray-600 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+    منصة متكاملة للأخبار، الأدوات، برمجة، و الأفكار الذكية
+  </p>
 
-  const meta = titles[lang] || titles.ar;
+  {/* Form - خانة الاشتراك والزر */}
+  <div className="w-full max-w-md space-y-4">
+    <input 
+      type="email" 
+      placeholder="بريدك الإلكتروني..." 
+      className="w-full p-4 bg-black text-white rounded-lg text-right focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    
+    <button className="w-full p-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-all">
+      انضم الآن
+    </button>
+  </div>
 
-  return {
-    title: meta.title,
-    description: meta.desc,
-    icons: { icon: '/favicon.ico' },
-    // إضافة كود التحقق الجديد من Google Search Console
-    verification: {
-      google: '1N6QvRZoXk29rXbtYFf9by1G-DBF3Z-YSQOLw0XVqcM',
-    },
-  };
-}
-
-export default async function RootLayout(props: { children: React.ReactNode, params: Promise<{ lang: string }> }) {
-  const { children } = props;
-  const { lang } = await props.params;
-
-  return (
-    <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
-      <body className="antialiased font-sans bg-white selection:bg-purple-100 selection:text-purple-900">
-        <Navbar lang={lang} />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        
-        {/* تفعيل Vercel Analytics */}
-        <Analytics />
-        
-        <footer className="py-10 border-t border-slate-100 bg-slate-50/50">
-          <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="text-slate-400 text-sm font-medium">
-              © {new Date().getFullYear()} <span className="text-slate-900 font-bold">Khawarizmai</span>. Built for the future of AI.
-            </p>
-          </div>
-        </footer>
-      </body>
-    </html>
-  );
-}
+</section>
