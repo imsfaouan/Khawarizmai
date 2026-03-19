@@ -2,7 +2,7 @@ import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Newsletter from '@/components/Newsletter'; // زدنا هادي
+import Newsletter from '@/components/Newsletter';
 
 const homeI18n: any = {
   ar: { 
@@ -75,47 +75,48 @@ async function getLatestPosts(lang: string) {
 }
 
 export default async function HomePage(props: { params: Promise<{ lang: string }> }) {
-  // هادي هي الخطوة الضرورية لحل الخطأ (Await params)
   const resolvedParams = await props.params; 
   const lang = resolvedParams.lang;
-  
   const dict = homeI18n[lang] || homeI18n.en;
-  // دابا lang ولات واجدة ومحسوبة:
   const latestPosts = await getLatestPosts(lang);
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center p-6" dir={dict.dir}>
-      <div className="max-w-6xl w-full text-center space-y-16 pb-20 text-right">
+    <div className="min-h-screen bg-slate-50 flex flex-col items-center p-4 md:p-6" dir={dict.dir}>
+      <div className="max-w-6xl w-full space-y-20 pb-20">
         
-        <header className="space-y-6 pt-10">
+        {/* 1. قسم الترحيب (Hero Section) - مسنطر ومقاد */}
+        <header className="flex flex-col items-center justify-center text-center pt-20 pb-10 space-y-8">
           <div className="inline-block px-5 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-black animate-pulse shadow-sm">
             Khawarizmai Engine
           </div>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight pb-3 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+          
+          <h1 className="text-5xl md:text-7xl font-black tracking-tight bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent leading-tight">
             {dict.welcome}
           </h1>
-          <p className="text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
+          
+          <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto font-medium leading-relaxed">
             {dict.subtitle}
           </p>
 
-          {/* زدنا الخانة هنا تحت العنوان مباشرة */}
-          <div className="max-w-md mx-auto mt-8">
+          <div className="w-full max-w-md mx-auto">
              <Newsletter />
           </div>
         </header>
 
-        {/* قسم آخر 5 مقالات */}
+        {/* 2. قسم آخر 5 مقالات */}
         {latestPosts.length > 0 && (
-          <div className="space-y-8 pt-5">
-            <h3 className="text-3xl font-black text-slate-800 text-start border-b-4 border-purple-500 inline-block">
-              {dict.latestTitle}
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <section className="space-y-8">
+            <div className="flex items-center justify-between border-b-4 border-purple-500 pb-2 mb-8">
+              <h3 className="text-3xl font-black text-slate-800">
+                {dict.latestTitle}
+              </h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {latestPosts.map((post) => (
                 <Link 
                   key={post.slug}
                   href={`/${lang}/${post.category}/${post.slug}`}
-                  className="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition-all text-start group"
+                  className="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-xl transition-all group text-start"
                 >
                   <span className="text-xs font-bold text-purple-500 uppercase tracking-widest">{post.category}</span>
                   <h4 className="text-lg font-black text-slate-800 mt-2 group-hover:text-blue-600 transition-colors leading-snug">
@@ -125,11 +126,11 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
                 </Link>
               ))}
             </div>
-          </div>
+          </section>
         )}
 
-        {/* شبكة التصنيفات الأساسية */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
+        {/* 3. شبكة التصنيفات الأساسية */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
           {categories.map((cat: any) => (
             <Link 
               key={cat.id} 
@@ -151,7 +152,7 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
               </div>
             </Link>
           ))}
-        </div>
+        </section>
 
       </div>
     </div>

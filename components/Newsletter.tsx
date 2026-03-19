@@ -11,9 +11,9 @@ export default function Newsletter() {
 
   // الترجمة الواجدة
   const translations = {
-    ar: { placeholder: "بريدك الإلكتروني...", button: "انضم الآن 🚀", success: "تم بنجاح!", loading: "جاري..." },
-    fr: { placeholder: "Votre email...", button: "S'abonner 🚀", success: "Succès !", loading: "Envoi..." },
-    en: { placeholder: "Your email...", button: "Join now 🚀", success: "Success!", loading: "Sending..." }
+    ar: { placeholder: "بريدك الإلكتروني...", button: "انضم الآن ", success: "تم بنجاح!", loading: "جاري..." },
+    fr: { placeholder: "Votre email...", button: "S'abonner ", success: "Succès !", loading: "Envoi..." },
+    en: { placeholder: "Your email...", button: "Join now ", success: "Success!", loading: "Sending..." }
   };
 
   const t = translations[lang as keyof typeof translations] || translations.ar;
