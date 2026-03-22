@@ -3,8 +3,26 @@ import path from 'path';
 import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-// قاموس الترجمة الموحد (بدون إيموجي، فقط أسهم Unicode احترافية)
+// 1. إضافة Metadata ديناميكية لتحسين السيو (SEO)
+export async function generateMetadata(props: { params: Promise<{ lang: string, category: string, slug: string }> }): Promise<Metadata> {
+  const { lang, category, slug } = await props.params;
+  const filePath = path.join(process.cwd(), 'content', lang, category, `${slug}.md`);
+  
+  if (!fs.existsSync(filePath)) return { title: "Article non trouvé" };
+  
+  const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
+  
+  return {
+    title: `${data.title} | Khawarizmai`,
+    description: data.description || data.title,
+    openGraph: {
+      images: [data.image],
+    },
+  };
+}
+
 const postI18n: any = {
   ar: { back: "← عودة", home: "الرئيسية", related: "مقالات قد تهمك", readTime: "دقائق قراءة", dir: "rtl" },
   fr: { back: "Retour →", home: "Accueil", related: "Articles suggérés", readTime: "min de lecture", dir: "ltr" },
@@ -22,12 +40,33 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
 
   const { data, content } = matter(fs.readFileSync(filePath, 'utf-8'));
   
-  // حساب وقت القراءة
   const wordsPerMinute = 200;
   const noOfWords = content.split(/\s/g).length;
   const minutes = Math.ceil(noOfWords / wordsPerMinute);
 
-  // جلب المقالات المقترحة من نفس القسم
+  // --- إعداد كود الـ Schema (مخفي على الزوار) ---
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": data.title,
+    "image": data.image,
+    "datePublished": data.date,
+    "author": {
+      "@type": "Person",
+      "name": "Abdessamad",
+      "url": "https://www.khawarizmai.xyz/about-us"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Khawarizmai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.khawarizmai.xyz/logo.png" // تأكد من وجود شعار في هذا المسار
+      }
+    },
+    "description": data.description || data.title
+  };
+
   let relatedPosts: any[] = [];
   if (fs.existsSync(contentDir)) {
     const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== `${slug}.md`);
@@ -40,6 +79,12 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
 
   return (
     <div className="min-h-screen bg-white pb-20" dir={dict.dir}>
+      {/* حقن الـ Schema هنا (لا تظهر في الصفحة) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Cover Image */}
       <div className="w-full h-[50vh] md:h-[60vh] relative">
         <img src={data.image} alt={data.title} className="w-full h-full object-cover" />
@@ -47,8 +92,6 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
       </div>
 
       <div className="max-w-4xl mx-auto px-6">
-        {/* --- قسم أزرار التنقل (Navigation) --- */}
-        {/* هاد القسم نزلناه شوية باش ما يبقاش مخبي تحت الهيدر في الإنجليزية والفرنسية */}
         <div className="flex items-center gap-6 mb-10 mt-8">
           <Link 
             href={`/${lang}/${category}`}
@@ -65,13 +108,11 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
           </Link>
         </div>
 
-        {/* Title Section */}
         <header className="mb-12">
           <h1 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
             {data.title}
           </h1>
           
-          {/* Info Bar */}
           <div className="flex flex-wrap items-center gap-4 text-slate-500 text-sm font-bold border-b border-slate-100 pb-6">
             <span>{data.date}</span>
             <span className="w-1.5 h-1.5 bg-slate-300 rounded-full"></span>
@@ -81,12 +122,11 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
           </div>
         </header>
 
-        {/* Content Section */}
         <article className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-lg prose-p:leading-relaxed prose-img:rounded-2xl">
           <ReactMarkdown>{content}</ReactMarkdown>
         </article>
 
-        {/* --- قسم مقالات قد تهمك (Related Posts) --- */}
+        {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
           <div className="mt-24 pt-12 border-t border-slate-100">
             <h3 className="text-2xl font-black text-slate-900 mb-10 flex items-center gap-3">
