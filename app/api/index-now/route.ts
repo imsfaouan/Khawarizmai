@@ -1,35 +1,41 @@
 import { google } from 'googleapis';
 import { NextResponse } from 'next/server';
-import path from 'path';
 
 export async function POST(req: Request) {
   try {
     const { url } = await req.json();
     
-    // 1. تحديد مكان الساروت (اللي سميناه google-indexing.json)
-    const keyPath = path.join(process.cwd(), 'google-indexing.json');
+    // 1. كنجيبو الساروت من Vercel (ماشي من ملف)
+    const serviceAccountKey = process.env.GOOGLE_INDEXING_KEY;
 
-    // 2. تفعيل الاتصال مع جوجل
+    if (!serviceAccountKey) {
+      throw new Error("الساروت ما كاينش في إعدادات Vercel!");
+    }
+
+    // 2. كنحولوا النص (JSON) لساروت حقيقي
+    const credentials = JSON.parse(serviceAccountKey);
+
+    // 3. تفعيل الاتصال مع جوجل
     const auth = new google.auth.GoogleAuth({
-      keyFile: keyPath,
+      credentials,
       scopes: ['https://www.googleapis.com/auth/indexing'],
     });
 
     const authClient = await auth.getClient();
     const indexing = google.indexing('v3');
 
-    // 3. إرسال طلب الأرشفة الفورية
+    // 4. إرسال طلب الأرشفة الفورية
     const response = await indexing.urlNotifications.publish({
       auth: authClient as any,
       requestBody: {
-        url: url, // الرابط اللي غاتعطيه ليه
-        type: 'URL_UPDATED', // كتعلم جوجل بلي الرابط جديد أو تبدل
+        url: url,
+        type: 'URL_UPDATED',
       },
     });
 
-    return NextResponse.json({ success: true, message: "جوجل في الطريق أ شريكي!", data: response.data });
+    return NextResponse.json({ success: true, data: response.data });
   } catch (error: any) {
-    console.error("Indexing Error:", error);
+    console.error("Indexing Error:", error.message);
     return NextResponse.json({ success: false, error: error.message }, { status: 500 });
   }
 }
