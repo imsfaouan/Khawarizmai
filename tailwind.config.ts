@@ -2,6 +2,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class', // هادا هو السطر اللي زدنا باش يفهم الليل
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +12,7 @@ const config: Config = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/typography'), // هادا هو المهم
+    require('@tailwindcss/typography'), 
   ],
 };
 export default config;

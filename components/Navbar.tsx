@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import ThemeToggle from './ThemeToggle';
 export default function Navbar({ lang }: { lang: string }) {
   const menu: any = {
     ar: [
@@ -24,7 +24,6 @@ export default function Navbar({ lang }: { lang: string }) {
       { name: "Courses", path: "academy", desc: "Learn AI with certified courses." }
     ]
   };
-
   const links = menu[lang] || menu.ar;
 
   return (
@@ -49,7 +48,14 @@ export default function Navbar({ lang }: { lang: string }) {
             </div>
           ))}
         </div>
-
+<div className="flex items-center gap-4">
+  {/* 🌙 هادي هي اللي خاصك تزيدها هنا باش تبان */}
+  <ThemeToggle />
+  {/* أزرار اللغات اللي عندك ديجا */}
+  <div className="flex gap-2 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-full border border-slate-200 dark:border-slate-700">
+    {/* ... الروابط ديال اللغات ... */}
+  </div>
+</div>
         {/* أزرار اللغات */}
         <div className="flex gap-2 bg-slate-100 p-1.5 rounded-full border border-slate-200">
           <Link href="/ar" className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-bold transition-all ${lang === 'ar' ? 'bg-white shadow-md text-purple-700' : 'text-slate-500 hover:text-slate-800'}`}>
