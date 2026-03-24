@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import ThemeToggle from './ThemeToggle';
+
 export default function Navbar({ lang }: { lang: string }) {
   const menu: any = {
     ar: [
       { name: "من نحن", path: "about-us", desc: "تعرف على منصة خوارزمي (Khawarizmai)." },
-      { name: "أدوات الذكية", path: "tools", desc: "أفضل أدوات AI مجربة ومقارنات بينها." },
+      { name: "الأدوات الذكية", path: "tools", desc: "أفضل أدوات AI مجربة ومقارنات بينها." },
       { name: "مشاريع Ai", path: "projects", desc: "مشاريع كاملة جاهزة للاستخدام." },
       { name: "Open Source", path: "open-source", desc: "نماذج ومشاريع مجانية ومفتوحة المصدر." },
-      { name: "دوارات معتمدة", path: "academy", desc: "تعلم الذكاء الاصطناعي بشهادات عالمية." }
+      { name: "دورات معتمدة", path: "academy", desc: "تعلم الذكاء الاصطناعي بشهادات عالمية." }
     ],
     fr: [
       { name: "À Propos", path: "about-us", desc: "Découvrez Khawarizmai." },
@@ -30,6 +30,7 @@ export default function Navbar({ lang }: { lang: string }) {
     <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4 shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center gap-4">
         
+        {/* الشعار */}
         <Link href={`/${lang}`} className="text-3xl font-black bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
           Khawarizmai
         </Link>
@@ -41,21 +42,14 @@ export default function Navbar({ lang }: { lang: string }) {
               <Link href={`/${lang}/${link.path}`} className="text-base font-bold text-slate-700 hover:text-purple-600 transition-colors py-2">
                 {link.name}
               </Link>
-              {/* المربع اللي كيطلع ملي كتحط السوري */}
+              {/* المربع التوضيحي عند تمرير الماوس */}
               <div className="absolute top-full left-1/2 -translate-x-1/2 mt-4 w-56 p-3 bg-white rounded-xl shadow-xl border border-slate-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 text-center">
                 <p className="text-xs text-slate-500 font-medium leading-relaxed">{link.desc}</p>
               </div>
             </div>
           ))}
         </div>
-<div className="flex items-center gap-4">
-  {/* 🌙 هادي هي اللي خاصك تزيدها هنا باش تبان */}
-  <ThemeToggle />
-  {/* أزرار اللغات اللي عندك ديجا */}
-  <div className="flex gap-2 bg-slate-100 dark:bg-slate-800 p-1.5 rounded-full border border-slate-200 dark:border-slate-700">
-    {/* ... الروابط ديال اللغات ... */}
-  </div>
-</div>
+
         {/* أزرار اللغات */}
         <div className="flex gap-2 bg-slate-100 p-1.5 rounded-full border border-slate-200">
           <Link href="/ar" className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-bold transition-all ${lang === 'ar' ? 'bg-white shadow-md text-purple-700' : 'text-slate-500 hover:text-slate-800'}`}>

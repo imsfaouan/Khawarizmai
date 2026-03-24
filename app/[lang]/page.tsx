@@ -7,7 +7,7 @@ import Newsletter from '@/components/Newsletter';
 const homeI18n: any = {
   ar: { 
     welcome: "مرحباً بك في Khawarizmai", 
-    subtitle: "منصة متكاملة للأخبار، الأدوات، برمجة، و الأفكار الذكية", 
+    subtitle: "منصة متكاملة للأخبار، الأدوات، البرمجة، والأفكار الذكية", 
     latestTitle: "آخر التحديثات والمقالات",
     dir: "rtl" 
   },
@@ -27,25 +27,25 @@ const homeI18n: any = {
 
 const categories = [
   { id: 'About Us', color: 'from-purple-500 to-blue-500', 
-    ar: { title: "من نحن", desc: "تعرف على منصة خوارزمي (Khawarizmai)، وجهتكم الأولى لاستكشاف أسرار الذكاء الاصطناعي، والأدوات الذكية، والدروس التطبيقية برؤية عربية وعالمية.", btnText: "اكتشف قصتنا" },
-    fr: { title: "À Propos", desc: "Découvrez Khawarizmai, votre destination pour explorer les secrets de l'IA, les outils intelligents et les tutoriels pratiques avec une vision globale.", btnText: "Découvrir notre histoire" },
-    en: { title: "About Us", desc: "Learn more about Khawarizmai, your premier destination for exploring AI secrets, smart tools, and practical tutorials with a global perspective.", btnText: "Discover our story" } },
+    ar: { title: "من نحن", btnText: "اكتشف قصتنا", desc: "تعرف على منصة خوارزمي (Khawarizmai)، وجهتكم الأولى لاستكشاف أسرار الذكاء الاصطناعي، والأدوات الذكية، والدروس التطبيقية برؤية عربية وعالمية." },
+    fr: { title: "À Propos", btnText: "Découvrir notre histoire", desc: "Découvrez Khawarizmai, votre destination pour explorer les secrets de l'IA, les outils intelligents et les tutoriels pratiques avec une vision globale." },
+    en: { title: "About Us", btnText: "Discover our story", desc: "Learn more about Khawarizmai, your premier destination for exploring AI secrets, smart tools, and practical tutorials with a global perspective." } },
   { id: 'tools', color: 'from-blue-500 to-cyan-500', 
-    ar: { title: "الأدوات الذكية", desc: "أفضل أدوات AI مجربة ومحدثة جديدة (ChatGPT، Claude، Midjourney، Grok...) مع مقارنات وprompts جاهزة.", btnText: "جرب الأدوات الآن" },
-    fr: { title: "Outils Intelligents", desc: "Les meilleurs outils IA testés et mis à jour avec comparaisons et prompts prêts.", btnText: "Essayez les outils" },
-    en: { title: "Smart Tools", desc: "Best tested and updated AI tools with comparisons and ready-to-use prompts.", btnText: "Try tools now" } },
+    ar: { title: "الأدوات الذكية", btnText: "جرب الأدوات الآن", desc: "أفضل أدوات AI مجربة ومحدثة (ChatGPT، Claude، Midjourney، Grok...) مع مقارنات وprompts جاهزة." },
+    fr: { title: "Outils Intelligents", btnText: "Essayez les outils", desc: "Les meilleurs outils IA testés et mis à jour avec comparaisons et prompts prêts." },
+    en: { title: "Smart Tools", btnText: "Try tools now", desc: "Best tested and updated AI tools with comparisons and ready-to-use prompts." } },
   { id: 'open-source', color: 'from-green-500 to-emerald-500', 
-    ar: { title: "Open Source", desc: "أقوى المشاريع المفتوحة المصدر (Open Source) مشاريع و نماذج، وأدوات يمكنك استخدامها فورًا مجانًا.", btnText: "اكتشف المشاريع المفتوحة" },
-    fr: { title: "Open Source", desc: "Les projets, modèles et outils open source les plus puissants que vous pouvez utiliser gratuitement.", btnText: "Découvrir l'Open Source" },
-    en: { title: "Open Source", desc: "The most powerful open-source projects, models, and tools you can use immediately for free.", btnText: "Explore Open Source" } },
+    ar: { title: "Open Source", btnText: "اكتشف المشاريع المفتوحة", desc: "أقوى المشاريع المفتوحة المصدر (Open Source) مشاريع، نماذج، وأدوات يمكنك استخدامها فوراً ومجاناً." },
+    fr: { title: "Open Source", btnText: "Découvrir l'Open Source", desc: "Les projets, modèles et outils open source les plus puissants que vous pouvez utiliser gratuitement." },
+    en: { title: "Open Source", btnText: "Explore Open Source", desc: "The most powerful open-source projects, models, and tools you can use immediately for free." } },
   { id: 'projects', color: 'from-orange-500 to-red-500', 
-    ar: { title: "مشاريع Ai", desc: "إكتشف مشاريع جاهزة كاملة (ترجمة، Agent، روبوتات، تحليل بيانات...)", btnText: "تصفح المشاريع الجاهزة" },
-    fr: { title: "Projets IA", desc: "Découvrez des projets complets prêts à l'emploi (Traduction, Agent, Robots, Analyse de données...).", btnText: "Parcourir les projets" },
-    en: { title: "AI Projects", desc: "Discover complete ready-to-use projects (Translation, Agent, Robots, Data analysis...).", btnText: "Browse ready projects" } },
+    ar: { title: "مشاريع AI", btnText: "تصفح المشاريع الجاهزة", desc: "اكتشف مشاريع جاهزة كاملة (ترجمة، Agent، روبوتات، تحليل بيانات...)" },
+    fr: { title: "Projets IA", btnText: "Parcourir les projets", desc: "Découvrez des projets complets prêts à l'emploi (Traduction, Agent, Robots, Analyse de données...)." },
+    en: { title: "AI Projects", btnText: "Browse ready projects", desc: "Discover complete ready-to-use projects (Translation, Agent, Robots, Data analysis...)." } },
   { id: 'academy', color: 'from-indigo-500 to-purple-600', 
-    ar: { title: "دورات Ai معتمدة", desc: "إكتشف دورات عالمية معتمدة لتطوير مهارتك في عالم دكاء اصطناعي (مجانية + مدفوعة)", btnText: "ابدأ التعلم الأن" },
-    fr: { title: "Formations IA Certifiées", desc: "Découvrez des formations mondiales certifiées pour développer vos compétences en IA.", btnText: "Commencer à apprendre" },
-    en: { title: "Certified AI Courses", desc: "Discover certified global courses to develop your skills in the AI world.", btnText: "Start learning now" } },
+    ar: { title: "دورات AI معتمدة", btnText: "ابدأ التعلم الآن", desc: "اكتشف دورات عالمية معتمدة لتطوير مهارتك في عالم الذكاء الاصطناعي (مجانية + مدفوعة)." },
+    fr: { title: "Formations IA Certifiées", btnText: "Commencer à apprendre", desc: "Découvrez des formations mondiales certifiées pour développer vos compétences en IA." },
+    en: { title: "Certified AI Courses", btnText: "Start learning now", desc: "Discover certified global courses to develop your skills in the AI world." } },
 ];
 
 async function getLatestPosts(lang: string) {
@@ -71,7 +71,7 @@ async function getLatestPosts(lang: string) {
     }
   }
 
-  return allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 5);
+  return allPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 6);
 }
 
 export default async function HomePage(props: { params: Promise<{ lang: string }> }) {
@@ -84,7 +84,7 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
     <div className="min-h-screen bg-slate-50 flex flex-col items-center p-4 md:p-6" dir={dict.dir}>
       <div className="max-w-6xl w-full space-y-20 pb-20">
         
-        {/* 1. قسم الترحيب (Hero Section) - مسنطر ومقاد */}
+        {/* 1. قسم الترحيب (Hero Section) */}
         <header className="flex flex-col items-center justify-center text-center pt-20 pb-10 space-y-8">
           <div className="inline-block px-5 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-black animate-pulse shadow-sm">
             Khawarizmai Engine
@@ -103,7 +103,7 @@ export default async function HomePage(props: { params: Promise<{ lang: string }
           </div>
         </header>
 
-        {/* 2. قسم آخر 5 مقالات */}
+        {/* 2. قسم آخر المقالات */}
         {latestPosts.length > 0 && (
           <section className="space-y-8">
             <div className="flex items-center justify-between border-b-4 border-purple-500 pb-2 mb-8">

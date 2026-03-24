@@ -1,8 +1,7 @@
-// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class', // هادا هو السطر اللي زدنا باش يفهم الليل
+  // حيدنا سطر darkMode نهائياً
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
