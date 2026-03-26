@@ -29,6 +29,25 @@ const postI18n: any = {
   en: { back: "Back →", home: "Home", related: "You might like", readTime: "min read", dir: "ltr" }
 };
 
+// مكون خاص لمعالجة الروابط داخل المقال
+const MarkdownComponents = {
+  a: ({ href, children, ...props }: any) => {
+    const isExternal = href?.startsWith('http');
+    if (isExternal) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link href={href || '/'} {...props}>
+        {children}
+      </Link>
+    );
+  },
+};
+
 export default async function PostPage(props: { params: Promise<{ lang: string, category: string, slug: string }> }) {
   const { lang, category, slug } = await props.params;
   const dict = postI18n[lang] || postI18n.en;
@@ -44,7 +63,6 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
   const noOfWords = content.split(/\s/g).length;
   const minutes = Math.ceil(noOfWords / wordsPerMinute);
 
-  // --- إعداد كود الـ Schema (مخفي على الزوار) ---
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
@@ -61,7 +79,7 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
       "name": "Khawarizmai",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.khawarizmai.xyz/logo.png" // تأكد من وجود شعار في هذا المسار
+        "url": "https://www.khawarizmai.xyz/logo.png"
       }
     },
     "description": data.description || data.title
@@ -79,13 +97,11 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
 
   return (
     <div className="min-h-screen bg-white pb-20" dir={dict.dir}>
-      {/* حقن الـ Schema هنا (لا تظهر في الصفحة) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Cover Image */}
       <div className="w-full h-[50vh] md:h-[60vh] relative">
         <img src={data.image} alt={data.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
@@ -123,10 +139,10 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
         </header>
 
         <article className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-lg prose-p:leading-relaxed prose-img:rounded-2xl">
-          <ReactMarkdown>{content}</ReactMarkdown>
+          {/* تم تعديل هذا السطر لتفعيل الروابط الذكية */}
+          <ReactMarkdown components={MarkdownComponents}>{content}</ReactMarkdown>
         </article>
 
-        {/* Related Posts Section */}
         {relatedPosts.length > 0 && (
           <div className="mt-24 pt-12 border-t border-slate-100">
             <h3 className="text-2xl font-black text-slate-900 mb-10 flex items-center gap-3">

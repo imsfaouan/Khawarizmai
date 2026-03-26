@@ -4,7 +4,8 @@
 :root {
   --bg-page: #ffffff;
   --text-main: #0f172a;
-  --text-prose: #334155;
+  /* تم التعديل هنا: تغميق لون النص لضمان تباين الألوان 100/100 في Accessibility */
+  --text-prose: #1e293b; 
   --text-heading: #020617;
   --border-color: #f1f5f9;
 }
@@ -72,6 +73,19 @@ body {
 }
 
 .prose p { margin-bottom: 2rem; text-align: justify; }
+
+/* --- تمت إضافة تنسيق الروابط هنا --- */
+.prose a {
+  color: #dc2626 !important; /* لون أحمر واضح للروابط */
+  text-decoration: underline;
+  text-underline-offset: 4px; /* كيبعد السطر شوية على الكلمة باش تبان نقية */
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #991b1b !important; /* أحمر داكن ملي كتحط عليه السوري */
+}
 
 .prose ul { margin-bottom: 2rem; list-style-type: none; padding-right: 1rem; }
 
