@@ -4,9 +4,9 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import Comments from '@/components/Comments'; // 👈 هادي زدناها هنا
+import Comments from '@/components/Comments';
 
-// 1. إضافة Metadata ديناميكية لتحسين السيو (SEO)
+// 1. إضافة Metadata ديناميكية لتحسين السيو (SEO) وحل مشكل النسخ المكررة
 export async function generateMetadata(props: { params: Promise<{ lang: string, category: string, slug: string }> }): Promise<Metadata> {
   const { lang, category, slug } = await props.params;
   const filePath = path.join(process.cwd(), 'content', lang, category, `${slug}.md`);
@@ -15,10 +15,17 @@ export async function generateMetadata(props: { params: Promise<{ lang: string, 
   
   const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
   
+  // الرابط الأساسي (Canonical URL) باش جوجل يعرف النسخة الأصلية
+  const url = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
+  
   return {
     title: `${data.title} | Khawarizmai`,
     description: data.description || data.title,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
+      url: url,
       images: [data.image],
     },
   };
@@ -140,11 +147,9 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
         </header>
 
         <article className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-lg prose-p:leading-relaxed prose-img:rounded-2xl">
-          {/* تم تعديل هذا السطر لتفعيل الروابط الذكية */}
           <ReactMarkdown components={MarkdownComponents}>{content}</ReactMarkdown>
         </article>
 
-        {/* 👈 زدنا هاد السطر هنا: مكون التعليقات */}
         <Comments />
 
         {relatedPosts.length > 0 && (

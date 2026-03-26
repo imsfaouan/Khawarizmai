@@ -3,6 +3,20 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Newsletter from '@/components/Newsletter';
+import { Metadata } from 'next'; // 👈 زدنا هادي
+
+// 👈 هاد الجزء زدناه باش نحلوا مشكل جوجل للرئيسية بكل اللغات
+export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await props.params;
+  const url = `https://www.khawarizmai.xyz/${lang}`;
+  
+  return {
+    title: `Khawarizmai | ${lang.toUpperCase()}`,
+    alternates: {
+      canonical: url,
+    },
+  };
+}
 
 const homeI18n: any = {
   ar: { 

@@ -2,6 +2,20 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import { Metadata } from 'next'; // 👈 زدنا هادي
+
+// 👈 هاد الجزء زدناه باش نحلوا مشكل جوجل (الروابط الأساسية للأقسام)
+export async function generateMetadata(props: { params: Promise<{ lang: string, category: string }> }): Promise<Metadata> {
+  const { lang, category } = await props.params;
+  const url = `https://www.khawarizmai.xyz/${lang}/${category}`;
+  
+  return {
+    title: `${category.charAt(0).toUpperCase() + category.slice(1)} | Khawarizmai`,
+    alternates: {
+      canonical: url,
+    },
+  };
+}
 
 const translations: any = {
   ar: { backHome: "الرئيسية", readMore: "إقرأ المزيد", dir: "rtl" },
