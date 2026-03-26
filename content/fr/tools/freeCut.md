@@ -1,7 +1,7 @@
 ---
 title: "Montage Pro sur Navigateur : Dites adieu aux logiciels lourds en 2026"
 description: "Marre d'attendre l'ouverture de Premiere Pro ? Découvrez FreeCut, l'outil révolutionnaire qui apporte le montage pro via WebGPU et Whisper directement dans votre navigateur, avec une confidentialité totale."
-image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/Edit-videos-Inyour-browser.png"
+image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/Edit-videos- Inyour-browser.png"
 date: "2026-03-25"
 category: "Tools"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Pro Video Editing Right in Your Browser: Goodbye Heavy Installs"
 description: "Tired of the Adobe Premiere bloat? Meet FreeCut—a revolutionary browser-based editor featuring WebGPU effects and Whisper AI. Professional editing with total privacy."
-image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/Edit-videos-Inyour-browser.png"
+image: "https://raw.githubusercontent.com/imsfaouan/images-kh/main/Edit-videos- Inyour-browser.png"
 date: "2026-03-25"
 category: "Tools"
 ---

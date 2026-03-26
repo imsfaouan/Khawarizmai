@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Comments from '@/components/Comments'; // 👈 هادي زدناها هنا
 
 // 1. إضافة Metadata ديناميكية لتحسين السيو (SEO)
 export async function generateMetadata(props: { params: Promise<{ lang: string, category: string, slug: string }> }): Promise<Metadata> {
@@ -142,6 +143,9 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
           {/* تم تعديل هذا السطر لتفعيل الروابط الذكية */}
           <ReactMarkdown components={MarkdownComponents}>{content}</ReactMarkdown>
         </article>
+
+        {/* 👈 زدنا هاد السطر هنا: مكون التعليقات */}
+        <Comments />
 
         {relatedPosts.length > 0 && (
           <div className="mt-24 pt-12 border-t border-slate-100">
