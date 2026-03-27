@@ -6,18 +6,15 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import Comments from '@/components/Comments';
 
-// 1. إضافة Metadata ديناميكية لتحسين السيو (SEO) وحل مشكل النسخ المكررة
 export async function generateMetadata(props: { params: Promise<{ lang: string, category: string, slug: string }> }): Promise<Metadata> {
   const { lang, category, slug } = await props.params;
   const filePath = path.join(process.cwd(), 'content', lang, category, `${slug}.md`);
-  
+ 
   if (!fs.existsSync(filePath)) return { title: "Article non trouvé" };
-  
+ 
   const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
-  
-  // الرابط الأساسي (Canonical URL) باش جوجل يعرف النسخة الأصلية
   const url = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
-  
+ 
   return {
     title: `${data.title} | Khawarizmai`,
     description: data.description || data.title,
@@ -27,6 +24,9 @@ export async function generateMetadata(props: { params: Promise<{ lang: string, 
     openGraph: {
       url: url,
       images: [data.image],
+      title: data.title,
+      description: data.description,
+      type: 'article',
     },
   };
 }
@@ -37,7 +37,6 @@ const postI18n: any = {
   en: { back: "Back →", home: "Home", related: "You might like", readTime: "min read", dir: "ltr" }
 };
 
-// مكون خاص لمعالجة الروابط داخل المقال
 const MarkdownComponents = {
   a: ({ href, children, ...props }: any) => {
     const isExternal = href?.startsWith('http');
@@ -63,68 +62,124 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
   const contentDir = path.join(process.cwd(), 'content', lang, category);
   const filePath = path.join(contentDir, `${slug}.md`);
 
-  if (!fs.existsSync(filePath)) return <div className="p-20 text-center font-bold text-xl">404 - Article non trouvé</div>;
+  if (!fs.existsSync(filePath)) {
+    return <div className="p-20 text-center font-bold text-xl">404 - Article non trouvé</div>;
+  }
 
   const { data, content } = matter(fs.readFileSync(filePath, 'utf-8'));
-  
+
   const wordsPerMinute = 200;
   const noOfWords = content.split(/\s/g).length;
   const minutes = Math.ceil(noOfWords / wordsPerMinute);
 
+  // رابط المقالة
+  const articleUrl = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
+
+  // === Schema Markup المحسن ===
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "headline": data.title,
-    "image": data.image,
-    "datePublished": data.date,
-    "author": {
-      "@type": "Person",
-      "name": "Abdessamad",
-      "url": "https://www.khawarizmai.xyz/about-us"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Khawarizmai",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.khawarizmai.xyz/logo.png"
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": `${articleUrl}#article`,
+        "headline": data.title,
+        "description": data.description || data.title,
+        "image": data.image,
+        "datePublished": data.date,
+        "dateModified": data.dateModified || data.date,
+        "author": {
+          "@type": "Person",
+          "name": "Abdessamad Imsfaouan",
+          "url": "https://www.khawarizmai.xyz/about-us"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Khawarizmai",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.khawarizmai.xyz/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": articleUrl
+        },
+        "inLanguage": lang,
+        "keywords": data.keywords || [category, "ذكاء اصطناعي", "أدوات AI"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${articleUrl}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": `https://www.khawarizmai.xyz/${lang}`,
+              "name": dict.home
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": `https://www.khawarizmai.xyz/${lang}/${category}`,
+              "name": category.charAt(0).toUpperCase() + category.slice(1)
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": articleUrl,
+              "name": data.title
+            }
+          }
+        ]
       }
-    },
-    "description": data.description || data.title
+    ]
   };
+  // === نهاية Schema Markup ===
 
+  // Related Posts
   let relatedPosts: any[] = [];
   if (fs.existsSync(contentDir)) {
     const allFiles = fs.readdirSync(contentDir).filter(f => f.endsWith('.md') && f !== `${slug}.md`);
     relatedPosts = allFiles.slice(0, 3).map(filename => {
       const fileContent = fs.readFileSync(path.join(contentDir, filename), 'utf-8');
       const { data: relatedData } = matter(fileContent);
-      return { slug: filename.replace('.md', ''), title: relatedData.title, image: relatedData.image };
+      return { 
+        slug: filename.replace('.md', ''), 
+        title: relatedData.title, 
+        image: relatedData.image 
+      };
     });
   }
 
   return (
     <div className="min-h-screen bg-white pb-20" dir={dict.dir}>
+      {/* Schema Markup */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Hero Image */}
       <div className="w-full h-[50vh] md:h-[60vh] relative">
         <img src={data.image} alt={data.title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-6">
+        {/* Navigation */}
         <div className="flex items-center gap-6 mb-10 mt-8">
-          <Link 
+          <Link
             href={`/${lang}/${category}`}
             className="text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors border border-slate-200 px-5 py-2.5 rounded-full bg-white shadow-sm flex items-center gap-2"
           >
             {dict.back}
           </Link>
-
-          <Link 
+          <Link
             href={`/${lang}`}
             className="text-sm font-bold text-slate-500 hover:text-slate-900 underline underline-offset-4"
           >
@@ -132,6 +187,7 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
           </Link>
         </div>
 
+        {/* Header */}
         <header className="mb-12">
           <h1 className="text-3xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
             {data.title}
@@ -146,12 +202,15 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
           </div>
         </header>
 
+        {/* Content */}
         <article className="prose prose-slate max-w-none prose-headings:text-slate-900 prose-p:text-lg prose-p:leading-relaxed prose-img:rounded-2xl">
           <ReactMarkdown components={MarkdownComponents}>{content}</ReactMarkdown>
         </article>
 
+        {/* Comments */}
         <Comments />
 
+        {/* Related Posts */}
         {relatedPosts.length > 0 && (
           <div className="mt-24 pt-12 border-t border-slate-100">
             <h3 className="text-2xl font-black text-slate-900 mb-10 flex items-center gap-3">
@@ -163,10 +222,10 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
               {relatedPosts.map((post) => (
                 <Link key={post.slug} href={`/${lang}/${category}/${post.slug}`} className="group block">
                   <div className="relative h-48 rounded-2xl overflow-hidden mb-4 shadow-sm border border-slate-100">
-                    <img 
-                      src={post.image} 
-                      alt={post.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
                   <h4 className="font-bold text-slate-800 line-clamp-2 group-hover:text-blue-600 transition-colors leading-snug">

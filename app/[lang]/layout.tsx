@@ -10,16 +10,29 @@ export async function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await props.params;
   const titles: any = {
-    ar: { title: 'Khawarizmai - منصة الذكاء الاصطناعي', desc: 'اكتشف عالم الـ AI، الأدوات الذكية، والمشاريع البرمجية المفتوحة.' },
-    fr: { title: 'Khawarizmai - Plateforme IA', desc: "Découvrez le monde de l'IA, les outils smart et les projets open-source." },
-    en: { title: 'Khawarizmai - AI Platform', desc: 'Explore the world of AI, smart tools, and open-source projects.' }
+    ar: { 
+      title: 'Khawarizmai - منصة الذكاء الاصطناعي والأدوات الذكية',
+      desc: 'اكتشف أحدث أدوات الذكاء الاصطناعي، المشاريع المفتوحة، والحلول الرقمية بالعربية والفرنسية والإنجليزية.' 
+    },
+    fr: { 
+      title: 'Khawarizmai - Plateforme IA et Outils Intelligents',
+      desc: "Découvrez les meilleurs outils d'IA, projets open-source et solutions numériques." 
+    },
+    en: { 
+      title: 'Khawarizmai - AI Platform & Smart Tools',
+      desc: 'Explore the latest AI tools, open-source projects, and digital solutions.' 
+    }
   };
   const meta = titles[lang] || titles.ar;
+
   return {
     title: meta.title,
     description: meta.desc,
     icons: { icon: '/favicon.ico' },
     verification: { google: 'hd8vSauB4oOyAEkQT-AqRp3cMg92_xVE25JCYlGQsPc' },
+    alternates: {
+      canonical: `https://www.khawarizmai.xyz/${lang}`,
+    },
   };
 }
 
@@ -28,8 +41,38 @@ export default async function RootLayout(props: { children: React.ReactNode, par
   const { lang } = await props.params;
   const isAr = lang === 'ar';
 
+  // Schema Markup للموقع ككل (WebSite)
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Khawarizmai",
+    "url": "https://www.khawarizmai.xyz",
+    "description": "منصة عربية متخصصة في أدوات الذكاء الاصطناعي، المشاريع المفتوحة، والحلول الرقمية باللغات العربية والفرنسية والإنجليزية.",
+    "inLanguage": ["ar", "fr", "en"],
+    "publisher": {
+      "@type": "Organization",
+      "name": "Khawarizmai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.khawarizmai.xyz/logo.png"
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.khawarizmai.xyz/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+      </head>
+
       <body className="antialiased font-sans selection:bg-purple-100 selection:text-purple-900 relative bg-white text-slate-900">
         
         <Navbar lang={lang} />
@@ -38,7 +81,7 @@ export default async function RootLayout(props: { children: React.ReactNode, par
           {children}
         </main>
 
-        {/* صندوق الاشتراك (Newsletter) */}
+        {/* Newsletter Section */}
         <section className="w-full bg-slate-50 border-t border-slate-100 py-16">
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h3 className="text-2xl font-black text-slate-900 mb-3">
