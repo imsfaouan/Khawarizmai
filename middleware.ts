@@ -1,34 +1,49 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { match } from '@formatjs/intl-localematcher';
+import Negotiator from 'negotiator';
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
+let locales = ['ar', 'fr', 'en'];
+let defaultLocale = 'ar';
 
-  // 1. تحديد اللغات المدعومة
-  const locales = ['ar', 'en', 'fr']
+function getLocale(request: NextRequest) {
+  // 1. كيهز اللغات اللي كيقبلهم المتصفح ديال الزائر
+  const headers = { 'accept-language': request.headers.get('accept-language') || '' };
+  const languages = new Negotiator({ headers }).languages();
 
-  // 2. فحص واش المسار (Pathname) كيبدا بشي لغة من اللغات المدعومة
-  const hasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  )
-
-  // 3. إيلا كان المسار ما فيهش اللغة، صيفطو لـ /ar (اللغة الافتراضية)
-  // ملاحظة: الـ matcher اللي تحت غايحمي الملفات التقنية باش ما يوصلوش لهنا أصلاً
-  if (!hasLocale) {
-    return NextResponse.redirect(new URL(`/ar${pathname}`, request.url))
+  // 2. كيدير "Match" بين لغات السيت ولغات الزائر
+  try {
+    return match(languages, locales, defaultLocale);
+  } catch (e) {
+    return defaultLocale;
   }
 }
 
-export const config = {
-  /*
-   * matcher: كيهنينا من تطبيق الـ Middleware على الملفات اللي ما محتاجاش لغات
-   */
-  matcher: [
-    // تجاهل المسارات التالية:
-    // - api: طلبات السيرفر
-    // - _next/static & _next/image: ملفات Next.js الداخلية والصور
-    // - sitemap.xml & robots.txt & favicon.ico: ملفات محركات البحث
-    // - الصور بجميع أنواعها (png, jpg, svg, webp, etc.)
-    '/((?!api|_next/static|_next/image|favicon.ico|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)).*)',
-  ],
+export function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // استثناء الملفات (هنا حل مشكل البحث اللي هضرنا عليه)
+  if (
+    pathname.startsWith('/search-index.json') ||
+    pathname.startsWith('/_next') ||
+    pathname.includes('.') // كاع الملفات اللي فيهم نقطة (png, jpg, json...)
+  ) {
+    return;
+  }
+
+  // واش المسار فيه ديجا لغة؟
+  const pathnameHasLocale = locales.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  );
+
+  if (pathnameHasLocale) return;
+
+  // إيلا مافيهش لغة، كيشوف لغة الزائر ويصيفطو ليها
+  const locale = getLocale(request);
+  request.nextUrl.pathname = `/${locale}${pathname}`;
+  return NextResponse.redirect(request.nextUrl);
 }
+
+export const config = {
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+};
