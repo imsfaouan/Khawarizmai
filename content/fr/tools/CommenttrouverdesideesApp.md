@@ -1,5 +1,5 @@
 ---
-title: "La mine d'or cachée sur Lovable : Comment dénicher des idées SaaS via l'espionnage légal ?"
+title: "Comment dénicher des idées d'applications et de SaaS à succès via l'espionnage légal sur Lovable"
 description: "Apprenez à utiliser Google Dorking pour découvrir des projets réels et des MVPs abandonnés sur Lovable afin de bâtir votre prochain business."
 image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1774884502/Download_any_project_from_GitHub_with_one_click_3_noaq3j.png"
 date: "2026-03-30"

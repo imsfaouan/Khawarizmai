@@ -1,5 +1,5 @@
 ---
-title: "The Hidden Goldmine in Lovable: How to Find Successful SaaS Ideas via Legal Spying"
+title: "How to Find Winning App and SaaS Ideas via Legal Spying on Lovable Projects"
 description: "Master the art of Google Dorking to uncover real project ideas and abandoned MVPs on Lovable. A step-by-step guide to smarter market research for your next SaaS."
 image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1774884502/Download_any_project_from_GitHub_with_one_click_3_noaq3j.png"
 date: "2026-03-30"
