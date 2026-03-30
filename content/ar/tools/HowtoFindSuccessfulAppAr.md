@@ -3,7 +3,7 @@ title: "كيف تجد أفكار تطبيقات و مواقع و أفكار SaaS
 description: "تعلم كيف تستخدم محرك بحث Google للكشف عن أفكار مشاريع حقيقية ونماذج أولية (MVPs) مهجورة على منصة Lovable لبناء مشروعك القادم."
 image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1774884502/Download_any_project_from_GitHub_with_one_click_3_noaq3j.png"
 date: "2026-03-30"
-keywords: ["أفكار مشاريع SaaS", "أفكار تطبيقات"."أدوات No-code", "Lovable app", "البحث المتقدم في جوجل", "أفكار ربح نت الانترنت", "Google Dorking"]
+keywords: ["أفكار مشاريع SaaS", "أفكار تطبيقات","أدوات No-code", "Lovable app", "البحث المتقدم في جوجل", "أفكار ربح نت الانترنت", "Google Dorking"]
 category: "Growth Hacking"
 ---
 
