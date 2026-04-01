@@ -84,6 +84,13 @@
     "category": "open-source"
   },
   {
+    "title": "استنساخ الصوت مجاناً وبدون إنترنت: حول أي نص إلى صوت احترافي على جهازك",
+    "description": "تعلم استنساخ الصوت مجانا على جهازك باستخدام Voicebox. بديل ElevenLabs مفتوح المصدر يوفر خصوصية كاملة وجودة احترافية بدون اشتراك.",
+    "url": "/ar/open-source/voicebox",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
     "title": "ما هو AI Agent؟ شرح بسيط مع أفكار مشاريع حقيقية يمكن بناؤها في 2026 و2027",
     "description": "تعرف على مفهوم AI Agent أو الوكيل الذكي، كيف يعمل، أنواعه المختلفة، ولماذا أصبح أحد أهم مشاريع الذكاء الاصطناعي في 2026 و2027 مع أمثلة واقعية ونصائح عملية للبدء.",
     "url": "/ar/projects/aiagent",
@@ -168,6 +175,13 @@
     "category": "tools"
   },
   {
+    "title": "توليد الصور بالذكاء الاصطناعي مجاناً بدون تسجيل: أفضل الطرق العملية في 2026",
+    "description": "دليل شامل لتوليد صور احترافية باستخدام الذكاء الاصطناعي دون الحاجة لإنشاء حساب أو دفع اشتراك. تجربة Raphael.app ونماذج FLUX مع نصائح عملية وأمثلة.",
+    "url": "/ar/tools/FreeAi_image_Gene-raphael",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
     "title": " كيف تحرر فيديوهاتك باحترافية داخل المتصفح فقط في 2026؟ وداعاً لثقل البرامج .",
     "description": "هل تكره انتظار تثبيت Premiere Pro؟ اكتشف FreeCut، الأداة الثورية التي تمنحك مونتاجاً احترافياً بمؤثرات WebGPU وتقنية Whisper مباشرة من متصفحك وبخصوصية كاملة.",
     "url": "/ar/tools/freeCut",
@@ -203,6 +217,13 @@
     "category": "tools"
   },
   {
+    "title": "كيف تجد أفكار تطبيقات و مواقع و أفكار SaaS ناجحة عبر التجسس القانوني على مشاريع Lovable؟",
+    "description": "تعلم كيف تستخدم محرك بحث Google للكشف عن أفكار مشاريع حقيقية ونماذج أولية (MVPs) مهجورة على منصة Lovable لبناء مشروعك القادم.",
+    "url": "/ar/tools/HowtoFindSuccessfulAppAr",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
     "title": "لا كود بعد اليوم! بناء تطبيق ذكاء اصطناعي خاص بك في أقل من ساعة باستخدام Google Opal",
     "description": "تعرف على منصة Google Opal الثورية المدعومة بـ Gemini. دليل شامل للمبتدئين لبناء تطبيقات AI مخصصة بدون برمجة، ربطها بـ Google Sheets، وتحويل أفكارك إلى أدوات رقمية في دقائق.",
     "url": "/ar/tools/opal-google-landing",
@@ -213,6 +234,13 @@
     "title": "بديل CapCut مجاني 100% في المتصفح بدون تحميل أو اشتراك أو علامة مائية في 2026",
     "description": "تعبت من علامة CapCut المائية والاشتراك المدفوع؟ جرب أقوى بديل مجاني يعمل مباشرة في المتصفح: OpenCut. مونتاج احترافي متعدد المسارات، معاينة حية، تصدير 4K، وكل شيء بدون تثبيت أو حساب. دليل سريع للبدء الآن.",
     "url": "/ar/tools/OpenCut",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "أفضل 5 مصادر للحصول على برومبت (Prompt) احترافي في 2026",
+    "description": "دليلك الشامل لأفضل مكتبات الأوامر (Prompts) الجاهزة. اكتشف مصادر سرية ومفتوحة المصدر لرفع كفاءة استخدامك لـ ChatGPT و Claude و Gemini.",
+    "url": "/ar/tools/promptsai",
     "lang": "ar",
     "category": "tools"
   },
@@ -336,6 +364,13 @@
     "category": "open-source"
   },
   {
+    "title": "Free Offline Voice Cloning: Turn Any Text into Professional Speech on Your Device",
+    "description": "Master free voice cloning on your hardware with Voicebox. An open-source ElevenLabs alternative offering total privacy and pro-grade quality without subscriptions.",
+    "url": "/en/open-source/voicebox",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
     "title": "What is an AI Agent? A Simple Guide and Real Project Ideas for 2026–2027",
     "description": "Learn what an AI Agent is, how it works, its main types, and why it is becoming one of the most important artificial intelligence projects in 2026 and 2027.",
     "url": "/en/projects/aiagent",
@@ -427,6 +462,13 @@
     "category": "tools"
   },
   {
+    "title": "Free AI Image Generation Without Sign-up: Best Practical Methods in 2026",
+    "description": "A complete guide to generating professional AI images instantly without creating an account or paying for credits. Hands-on experience with Raphael.app and FLUX models, including practical tips and examples.",
+    "url": "/en/tools/FreeAi_image_Gene-raphael.app",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
     "title": "Pro Video Editing Right in Your Browser: Goodbye Heavy Installs",
     "description": "Tired of the Adobe Premiere bloat? Meet FreeCut—a revolutionary browser-based editor featuring WebGPU effects and Whisper AI. Professional editing with total privacy.",
     "url": "/en/tools/freeCut",
@@ -462,6 +504,13 @@
     "category": "tools"
   },
   {
+    "title": "How to Find Winning App and SaaS Ideas via Legal Spying on Lovable Projects",
+    "description": "Master the art of Google Dorking to uncover real project ideas and abandoned MVPs on Lovable. A step-by-step guide to smarter market research for your next SaaS.",
+    "url": "/en/tools/HowtoFindSuccessfulApp",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
     "title": "No-Code is Here! Build Your Own AI App in Under an Hour with Google Opal",
     "description": "Discover Google Opal, the revolutionary Gemini-powered platform. A comprehensive beginner's guide to building custom AI apps without coding, integrating Google Sheets, and automating your workflow in minutes.",
     "url": "/en/tools/opal-google-landing",
@@ -472,6 +521,13 @@
     "title": "100% Free CapCut Alternative in Browser: No Download, No Subscription, No Watermark in 2026",
     "description": "Tired of CapCut's watermark and paid subscriptions? Try the most powerful free alternative that works directly in your browser: OpenCut. Professional multi-track editing, live preview, 4K export, all without installation or an account. Quick guide to start now.",
     "url": "/en/tools/OpenCut",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Top 5 Sources for Professional AI Prompts in 2026",
+    "description": "Your comprehensive guide to the best ready-to-use prompt libraries. Discover secret and open-source resources to master ChatGPT, Claude, and Gemini.",
+    "url": "/en/tools/prompysaien",
     "lang": "en",
     "category": "tools"
   },
@@ -595,6 +651,13 @@
     "category": "open-source"
   },
   {
+    "title": "Clonage vocal gratuit et hors ligne : transformez n'importe quel texte en voix professionnelle sur votre appareil",
+    "description": "Apprenez à cloner des voix gratuitement avec Voicebox. Une alternative open-source à ElevenLabs offrant confidentialité totale et qualité pro sans abonnement.",
+    "url": "/fr/open-source/voicebox",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
     "title": "Qu’est-ce qu’un AI Agent ? Guide simple et idées de projets réels en 2026-2027",
     "description": "Découvrez ce qu’est un AI Agent (agent intelligent), comment il fonctionne, ses principaux types et pourquoi il devient l’un des projets d’intelligence artificielle les plus prometteurs en 2026 et 2027.",
     "url": "/fr/projects/aiagent",
@@ -658,6 +721,13 @@
     "category": "tools"
   },
   {
+    "title": "Comment dénicher des idées d'applications et de SaaS à succès via l'espionnage légal sur Lovable",
+    "description": "Apprenez à utiliser Google Dorking pour découvrir des projets réels et des MVPs abandonnés sur Lovable afin de bâtir votre prochain business.",
+    "url": "/fr/tools/CommenttrouverdesideesApp",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
     "title": "Comment réduire la taille de n'importe quelle vidéo sans perte de qualité et sans internet en 2026 ? La meilleure méthode 100% gratuite",
     "description": "Fatigué des vidéos qui prennent trop de place sur votre téléphone ou ordinateur ? Apprenez à compresser vos vidéos en haute qualité, sans frais et sans connexion internet. Un guide simple pour débutants sur un outil gratuit fonctionnant sur Windows, Mac et Linux.",
     "url": "/fr/tools/compressO",
@@ -682,6 +752,13 @@
     "title": "Fatigué de naviguer entre des dizaines de fenêtres ? Voici le secret pour retrouver votre concentration",
     "description": "Perdez-vous du temps entre les onglets WhatsApp, Telegram et Gmail ? Découvrez la solution ultime pour regrouper vos applications dans une seule interface et booster votre productivité.",
     "url": "/fr/tools/ferdium",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Génération d'images par IA gratuite sans inscription : Les meilleures méthodes pratiques en 2026",
+    "description": "Guide complet pour générer des images professionnelles par intelligence artificielle instantanément sans créer de compte ni payer d'abonnement. Expérience avec Raphael.app et les modèles FLUX, conseils pratiques et exemples.",
+    "url": "/fr/tools/FreeAi_image_rapahel.fr",
     "lang": "fr",
     "category": "tools"
   },
@@ -731,6 +808,13 @@
     "title": "Alternative à CapCut 100% gratuite sur navigateur : Sans téléchargement, sans abonnement, sans filigrane en 2026",
     "description": "Fatigué du filigrane CapCut et des abonnements payants ? Essayez la meilleure alternative gratuite qui fonctionne directement dans votre navigateur : OpenCut. Montage professionnel multi-pistes, prévisualisation en direct, export 4K, le tout sans installation ni compte. Guide rapide pour commencer maintenant.",
     "url": "/fr/tools/OpenCut",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Top 5 Sources for Professional AI Prompts in 2026",
+    "description": "Your comprehensive guide to the best ready-to-use prompt libraries. Discover secret and open-source resources to master ChatGPT, Claude, and Gemini.",
+    "url": "/fr/tools/promptsaifr",
     "lang": "fr",
     "category": "tools"
   },
