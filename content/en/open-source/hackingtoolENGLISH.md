@@ -96,4 +96,6 @@ But always remember:
 **Tool Link on GitHub:**  
 [https://github.com/Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool)
 
+**KHAWARIZMAI**
+
 ---
