@@ -9,7 +9,7 @@ category: "Tools"
 
 ![oiioii](https://res.cloudinary.com/dnavgirzt/image/upload/v1775259630/Capture_d_%C3%A9cran_2026-04-04_002104_ohiiqe.png)
 
-# Créez des vidéos et films d'animation complets avec l'IA : Le premier studio d'anime en un clic
+## Créez des vidéos et films d'animation complets avec l'IA : Le premier studio d'anime en un clic
 
 Autrefois, produire un anime complet nécessitait une grande équipe de scénaristes, dessinateurs, animateurs et réalisateurs, ainsi que des mois, voire des années de travail et un budget important.
 
@@ -17,7 +17,7 @@ Aujourd’hui, les choses ont radicalement changé.
 
 Il existe désormais un système d’intelligence artificielle complet qui fonctionne comme un **vrai studio d’anime**. Il peut transformer une simple idée écrite ou une seule image en vidéo anime 2D complète, avec une animation fluide, un éclairage cinématographique et une cohérence parfaite des personnages.
 
-### Comment fonctionne OiiOii ? Le système d’agents intelligents
+## Comment fonctionne OiiOii ? Le système d’agents intelligents
 
 OiiOii repose sur un **Multi-Agent System** — une équipe d’agents intelligents qui collaborent comme un véritable studio de production d’anime :
 
@@ -32,7 +32,9 @@ Une vidéo anime 2D complète, fluide et professionnelle, qui semble sortie d’
 
 ![oiioii](https://res.cloudinary.com/dnavgirzt/image/upload/v1775260204/Capture_d_%C3%A9cran_2026-04-04_002003_dmobhp.png)
 
-### Pourquoi OiiOii représente-t-il une révolution ?
+---
+
+## Pourquoi OiiOii représente-t-il une révolution ?
 
 - **Aucune compétence en dessin ou animation requise** : Une simple idée ou image de référence suffit.
 - **Pas besoin d’ingénierie de prompt avancée** : Le système comprend profondément le contexte.
@@ -41,14 +43,14 @@ Une vidéo anime 2D complète, fluide et professionnelle, qui semble sortie d’
 
 ![oiioii](https://res.cloudinary.com/dnavgirzt/image/upload/v1775260650/Capture_d_%C3%A9cran_2026-04-04_005656_xllqnh.png)
 
-### Qui peut bénéficier d’OiiOii ?
+## Qui peut bénéficier d’OiiOii ?
 
 - Les créateurs de contenu YouTube et TikTok qui veulent produire des anime courts rapidement.
 - Les développeurs et créateurs indépendants qui ont besoin de démos ou de pilots pour leurs projets.
 - Les fans d’anime qui rêvent de transformer leurs idées en œuvres visuelles.
 - Les startups dans le domaine du divertissement numérique.
 
-### Conclusion
+## Conclusion
 
 OiiOii n’est pas simplement un outil de génération d’images ou de vidéos courtes.  
 C’est un **studio d’anime complet** propulsé par l’intelligence artificielle, qui rend le rêve de produire un anime accessible à toute personne ayant une idée, même sans aucune compétence artistique préalable.
