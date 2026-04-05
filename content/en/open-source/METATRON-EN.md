@@ -27,7 +27,7 @@ Today, things have changed.
 - Features and uses
 - Important legal warnings
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/main_menu.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406775/a_piuad0.png)
 
 ## How Does METATRON Work?
 
@@ -45,7 +45,7 @@ METATRON relies on a local AI model (local LLM) that works with traditional pent
 
 All of this happens **inside your device** without sending any data outside.
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/scan_running.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406761/image_2026-04-05_173236923_e2bh7l.png)
 
 ## Main Features
 
@@ -62,37 +62,37 @@ METATRON currently works on **Linux** only.
 
 ## Simple Steps:
 
-*1. Open the Terminal:*  
+**1. Open the Terminal:**  
 Any regular terminal in a Linux distribution (such as Ubuntu, Kali Linux, or Parrot OS).  
 (Ctrl + Alt + T in most distributions).
 
 However, the best and safest option is to use Kali Linux or Parrot OS.
 
-*2. Copy the following command:*
+**2. Copy the following command:**
 
 git clone https://github.com/sooryathejas/METATRON.git
 cd METATRON
 
-*Create a clean Python environment (important to avoid problems):*
+**Create a clean Python environment (important to avoid problems):**
 
 python3 -m venv venv
 source venv/bin/activate
 
-*Install the requirements:*
+**Install the requirements:**
 
 pip install -r requirements.txt
 
-*Install some required system tools:*
+**Install some required system tools:**
 
 sudo apt update
 sudo apt install nmap whois whatweb curl dnsutils nikto
 
-*After completing these steps, run the tool with:*
+**After completing these steps, run the tool with:**
 
 python metatron.py
 
-*Note 1:* It is recommended to use a powerful Linux machine (such as Ubuntu or Kali Linux) with at least 16GB of RAM for the best performance.
-*Note 2:* If you are a complete beginner, you can use artificial intelligence like *Claude* or any AI you prefer to help you install METATRON.
+**Note 1:** It is recommended to use a powerful Linux machine (such as Ubuntu or Kali Linux) with at least 16GB of RAM for the best performance.
+**Note 2:** If you are a complete beginner, you can use artificial intelligence like *Claude* or any AI you prefer to help you install METATRON.
 
 **What is METATRON Used For?**
 

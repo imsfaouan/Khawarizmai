@@ -27,7 +27,7 @@ category: "open-source"
 - المميزات والاستخدامات
 - التحذيرات القانونية المهمة
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/main_menu.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406775/a_piuad0.png)
 
 ## كيف يعمل METATRON؟
 
@@ -45,7 +45,7 @@ METATRON يعتمد على نموذج ذكاء اصطناعي محلي (local LL
 
 كل هذا يحدث **داخل جهازك** بدون إرسال أي بيانات إلى الخارج.
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/scan_running.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406761/image_2026-04-05_173236923_e2bh7l.png)
 
 ## المميزات الرئيسية
 
@@ -62,34 +62,34 @@ METATRON يعمل حاليًا على **لينكس** فقط.
 
 ## الخطوات البسيطة:
 
-*1. افتح الـ Terminal : *
+**1. افتح الـ Terminal :**
 أي Terminal عادي في توزيعة لينكس (مثل Ubuntu، Kali Linux، أو Parrot OS).
  (Ctrl + Alt + T في معظم التوزيعات).
 
 لكن الأفضل والأكثر أمانًا هو استخدام Kali Linux أو Parrot OS،
 
-*2. انسخ الأمر التالي:*
+**2. انسخ الأمر التالي:**
 
 git clone https://github.com/sooryathejas/METATRON.git
 cd METATRON
 
-*أنشئ بيئة Python نظيفة (مهم لتجنب المشاكل):*
+**أنشئ بيئة Python نظيفة (مهم لتجنب المشاكل):**
 
 python3 -m venv venv
 source venv/bin/activate
 
-*قم بتثبيت المتطلبات:*
+**قم بتثبيت المتطلبات:**
 
 pip install -r requirements.txt
 
-*قم بتثبيت بعض الأدوات النظامية المطلوبة:*
+**قم بتثبيت بعض الأدوات النظامية المطلوبة:**
 
 sudo apt update
 sudo apt install nmap whois whatweb curl dnsutils nikto
 
 بعد الانتهاء من هذه الخطوات
 
-شغل الأداة:
+**شغل الأداة:**
 
 python metatron.py
 
@@ -105,11 +105,12 @@ python metatron.py
 تحليل الثغرات في بيئات المختبر (Lab)
 
 **تحذير قانوني هام**
+
 METATRON أداة قوية وهجومية.
 
 استخدامها على أنظمة أو مواقع بشكل غير قانوني وقد يعرضك للمساءلة القانونية.
 
-*هذه الأداة مخصصة فقط لـ:*
+**هذه الأداة مخصصة فقط لـ:**
 اختبار أنظمتك الخاصة
 بيئات المختبرات
 مهام Ethical Hacking بإذن رسمي

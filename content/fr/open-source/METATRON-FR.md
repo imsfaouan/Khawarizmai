@@ -27,7 +27,7 @@ Aujourd’hui, les choses ont changé.
 - Les fonctionnalités et les utilisations
 - Les avertissements juridiques importants
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/main_menu.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406775/a_piuad0.png)
 
 ## Comment fonctionne METATRON ?
 
@@ -45,7 +45,7 @@ METATRON repose sur un modèle d’intelligence artificielle local (local LLM) q
 
 Tout cela se passe **à l’intérieur de votre appareil** sans envoyer aucune donnée à l’extérieur.
 
-![AIhacking](https://github.com/sooryathejas/METATRON/blob/main/screenshots/scan_running.png)
+![AIhacking](https://res.cloudinary.com/dnavgirzt/image/upload/v1775406761/image_2026-04-05_173236923_e2bh7l.png)
 
 ## Principales fonctionnalités
 
@@ -62,37 +62,37 @@ METATRON fonctionne actuellement sur **Linux** uniquement.
 
 ## Les étapes simples :
 
-*1. Ouvrez le Terminal :*  
+**1. Ouvrez le Terminal :**  
 
 N’importe quel terminal classique dans une distribution Linux (comme Ubuntu, Kali Linux ou Parrot OS).  
 (Ctrl + Alt + T dans la plupart des distributions).
 
 Cependant, le meilleur et le plus sûr est d’utiliser Kali Linux ou Parrot OS.
 
-*2. Copiez la commande suivante :*
+**2. Copiez la commande suivante :**
 
 git clone https://github.com/sooryathejas/METATRON.git
 cd METATRON
 
-*Créez un environnement Python propre (important pour éviter les problèmes) :*
+**Créez un environnement Python propre (important pour éviter les problèmes) :**
 
 python3 -m venv venv
 source venv/bin/activate
 
-*Installez les dépendances :*
+**Installez les dépendances :**
 
 pip install -r requirements.txt
 
-*Installez certains outils système requis :*
+**Installez certains outils système requis :**
 
 sudo apt update
 sudo apt install nmap whois whatweb curl dnsutils nikto
 
-*Après avoir terminé ces étapes, lancez l’outil avec :*
+**Après avoir terminé ces étapes, lancez l’outil avec :**
 python metatron.py
 
-*Note 1 :* Il est recommandé d’utiliser une machine Linux puissante (comme Ubuntu ou Kali Linux) avec au moins 16 Go de RAM pour obtenir les meilleures performances.
-*Note 2 :* Si vous êtes un débutant complet, vous pouvez utiliser une intelligence artificielle comme Claude ou n’importe quelle IA que vous préférez pour vous aider à installer METATRON.
+**Note 1 :** Il est recommandé d’utiliser une machine Linux puissante (comme Ubuntu ou Kali Linux) avec au moins 16 Go de RAM pour obtenir les meilleures performances.
+**Note 2 :** Si vous êtes un débutant complet, vous pouvez utiliser une intelligence artificielle comme Claude ou n’importe quelle IA que vous préférez pour vous aider à installer METATRON.
 
 **À quoi sert METATRON ?**
 
@@ -106,7 +106,7 @@ python metatron.py
 METATRON est un outil puissant et offensif.
 L’utiliser sur des systèmes ou des sites sans autorisation est illégal et peut vous exposer à des responsabilités légales.
 
-*Cet outil est destiné uniquement à :*
+**Cet outil est destiné uniquement à :**
 
 - Tester vos propres systèmes
 - Environnements de laboratoire
