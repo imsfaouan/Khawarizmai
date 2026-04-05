@@ -1,4 +1,3 @@
-
 ---
 title: "Exécuter Gemma 4 sans internet : Le modèle d'IA open source le plus puissant qui fonctionne localement en 2026"
 description: "Guide complet et direct pour exécuter Gemma 4 (le dernier modèle Agentic de Google) sur votre téléphone sans internet. Confidentialité totale, supporte le texte, les images et l'audio, et fonctionne 100% localement."
@@ -7,6 +6,7 @@ date: "2026-04-05"
 keywords: ["exécuter Gemma 4 sans internet", "Gemma 4 local", "Gemma 4 sur téléphone", "IA offline 2026", "Google AI Edge Gallery", "modèle IA open source", "exécuter Gemma 4 sur Windows", "Gemma 4 Android"]
 category: "Tools"
 ---
+
 
 ![gemma4](https://ai.google.dev/gemma/images/gemma4_banner.png)
 
