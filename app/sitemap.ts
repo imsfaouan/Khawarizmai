@@ -1,28 +1,27 @@
 import { MetadataRoute } from 'next';
 import fs from 'fs';
 import path from 'path';
+import matter from 'gray-matter';   // ← هذا هو الـ import اللي كنت محتاجو
 
 const baseUrl = 'https://www.khawarizmai.xyz';
+
 const languages = ['ar', 'fr', 'en'];
-// هادو هما الأقسام اللي عندك في مجلد content
-// تأكد بلي السميات صحيحة (نفس سميات المجلدات اللي عندك لداخل)
-const categories = ['tools', 'open-source', 'projects', 'academy', 'About Us'];
+const categories = ['tools', 'open-source', 'projects', 'academy', 'about-us'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [];
 
   languages.forEach((lang) => {
-    // 1. إضافة الصفحة الرئيسية لكل لغة (مثال: /ar)
+    // 1. الصفحة الرئيسية لكل لغة
     sitemapEntries.push({
       url: `${baseUrl}/${lang}`,
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 1,
+      priority: 1.0,
     });
 
-    // 2. قراءة الأقسام والمقالات
     categories.forEach((category) => {
-      // إضافة رابط القسم (مثال: /ar/tools)
+      // 2. صفحة القسم (مثال: /ar/tools)
       sitemapEntries.push({
         url: `${baseUrl}/${lang}/${category}`,
         lastModified: new Date(),
@@ -30,21 +29,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       });
 
-      // تحديد المسار للمجلد اللي فيه المقالات
+      // 3. المقالات داخل كل قسم
       const contentDir = path.join(process.cwd(), 'content', lang, category);
 
-      // إيلا كان المجلد كاين، جبد كاع المقالات (.md)
       if (fs.existsSync(contentDir)) {
         try {
           const files = fs.readdirSync(contentDir).filter((f) => f.endsWith('.md'));
-          
+
           files.forEach((file) => {
             const slug = file.replace('.md', '');
+            const filePath = path.join(contentDir, file);
+            
+            // قراءة الـ frontmatter للحصول على التاريخ
+            const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
+
             sitemapEntries.push({
               url: `${baseUrl}/${lang}/${category}/${slug}`,
-              lastModified: new Date(), 
+              lastModified: new Date(data.dateModified || data.date || new Date()),
               changeFrequency: 'weekly',
-              priority: 0.7,
+              priority: 0.75,
             });
           });
         } catch (error) {

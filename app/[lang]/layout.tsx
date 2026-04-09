@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import '../globals.css';
 import { Metadata } from 'next';
 import { Analytics } from "@vercel/analytics/react";
+import Script from 'next/script'; // 👈 1. ضروري نزيدو هاد السطر الفوق
 
 export async function generateStaticParams() {
   return [{ lang: 'ar' }, { lang: 'en' }, { lang: 'fr' }];
@@ -104,6 +105,16 @@ export default async function RootLayout(props: { children: React.ReactNode, par
         </section>
 
         <Analytics />
+
+        {/* 👇 2. كود MoneTag: تم وضعه قبل الـ Footer بخاصية lazyOnload 👇 */}
+        <Script
+          id="monetag-main-tag"
+          src="https://quge5.com/88/tag.min.js"
+          data-zone="227770"
+          data-cfasync="false"
+          strategy="lazyOnload"
+        />
+        {/* 👆 نهاية كود MoneTag 👆 */}
 
         <footer className="py-10 border-t border-slate-100 bg-white">
           <div className="max-w-7xl mx-auto px-6 text-center">

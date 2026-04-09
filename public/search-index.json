@@ -1,0 +1,856 @@
+[
+  {
+    "title": "من نحن (About Us)",
+    "description": "مرحبا بكم في خوارزم أي (Khawarizmai)، المنصة التقنية المتخصصة في استكشاف آفاق الذكاء الاصطناعي وتبسيط التقنيات الحديثة للمطورين والمبدعين .",
+    "url": "/ar/about-us/khawarizmai",
+    "lang": "ar",
+    "category": "about-us"
+  },
+  {
+    "title": "شهادة Claude Certified Architect : فرصتك لتكون من النخبة قبل أن تصبح إلزامية في 2026",
+    "description": "Anthropic تطلق شهادتها الرسمية الأولى لمهندسي الذكاء الاصطناعي. اكتشف كيف تحصل على شهادة Claude Certified Architect مجاناً وانضم للشركات الكبرى مثل Accenture وDeloitte.",
+    "url": "/ar/academy/Claude-Certified-Architect",
+    "lang": "ar",
+    "category": "academy"
+  },
+  {
+    "title": "أفضل دورات  الذكاء الاصطناعي معتمدة للمبتدئين (بدون برمجة)",
+    "description": "اكتشف أفضل الدورات المجانية لتعلم أساسيات الذكاء الاصطناعي بدون خبرة برمجية. دليل مبسط يشرح أهم الدورات العالمية مثل AI for Everyone وElements of AI وIBM AI Fundamentals.",
+    "url": "/ar/academy/courseai",
+    "lang": "ar",
+    "category": "academy"
+  },
+  {
+    "title": "كيف تتعلم البرمجة  2026 . كيف تبدأ من الصفر وتصنع تطبيقاتك الخاصة باستخدام الذكاء الاصطناعي؟",
+    "description": "تعرف على مفهوم البرمجة للمبتدئين في 2026. تعلم كيف تبني مواقع، تطبيقات، ومشاريع SaaS مجاناً. اكتشف أسرار البرمجة وأفضل اللغات للبدء، مع نصائح من تجربة شخصية في مدونة Khawarizmai.",
+    "url": "/ar/academy/Programming",
+    "lang": "ar",
+    "category": "academy"
+  },
+  {
+    "title": "كورس YouTube Faceless 2026: دليلك العملي لبناء إمبراطورية رقمية وتحقيق الدخل بدون ظهور",
+    "description": "تعلم كيف تنشئ قناة يوتيوب ناجحة وتجني آلاف الدولارات دون الحاجة للوقوف أمام الكاميرا. كورس أكاديمي شامل يغطي الأتمتة، الخوارزميات، واستراتيجيات النمو السريع.",
+    "url": "/ar/academy/youtube",
+    "lang": "ar",
+    "category": "academy"
+  },
+  {
+    "title": "اكتشف أداة  Deep-Live-Cam  المفتوحة المصدر . دليلك الشامل لتغيير الوجوه في البث المباشر بدقة مذهلة",
+    "description": "تعرف على أداة Deep-Live-Cam المفتوحة المصدر التي تتيح تبديل الوجوه في الوقت الحقيقي أثناء البث المباشر بجودة سينمائية، مع الحفاظ على تعابير الوجه وحركة الفم بدقة مذهلة.",
+    "url": "/ar/open-source/deep-live-cam",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "وداعاً للاشتراكات الباهظة . كيف تستخدم Goose لأتمتة مشاريعك البرمجية محلياً؟",
+    "description": "تعرف على أداة Goose، الوكيل البرمجي المفتوح المصدر الذي يوفر عليك مئات الدولارات. اكتشف كيف تؤتمت مهامك الهندسية، تبني مشاريعك من الصفر، وتصلح الأخطاء برمجياً على جهازك الخاص وبخصوصية تامة.",
+    "url": "/ar/open-source/goose",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "Jan. كيف تشغل أقوى نماذج الذكاء الاصطناعي على جهازك بخصوصية كاملة وبدون إنترنت",
+    "description": "Jan، البديل المفتوح المصدر لـ ChatGPT. دليل شامل حول كيفية تشغيل نماذج الذكاء الاصطناعي مثل Llama وDeepSeek محلياً على جهازك، مع الحفاظ على خصوصية بياناتك وتوفير تكاليف الاشتراك.",
+    "url": "/ar/open-source/jan",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "اكتشف أداة MeetScribe المفتوحة المصدر التي تتيح لك تحويل تسجيلات الاجتماعات إلى نصوص وملخصات ذكية باستخدام الذكاء الاصطناعي المحلي",
+    "description": "اكتشف أداة MeetScribe المفتوحة المصدر التي تتيح لك تحويل تسجيلات الاجتماعات إلى نصوص وملخصات ذكية باستخدام الذكاء الاصطناعي المحلي (WhisperX و Ollama) دون الحاجة لاتصال بالإنترنت أو اشتراكات شهرية.",
+    "url": "/ar/open-source/meetscribe",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": " بديل CapCut Pro المجاني وبدون اشتراك ! تعرّف على OpenCut: البديل المجاني المفتوح المصدر الأقوى للمونتاج في 2026",
+    "description": "هل سئمت من قيود CapCut؟ اكتشف OpenCut، أداة المونتاج المفتوحة المصدر التي تكتسح GitHub. تعلم كيف تقوم بمونتاج فيديوهاتك باحترافية، بدون علامة مائية، وبدون اشتراكات شهرية.",
+    "url": "/ar/open-source/opencut",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "كيف تستخرج بيانات أي موقع بسرعة ومجانًا في 2026 دون فواتير شهرية أو حدود؟",
+    "description": "تعلم كيفية استخراج بيانات منظمة من مواقع الإنترنت بكفاءة عالية وبدون تكاليف مستمرة. دليل شامل لأقوى إطار عمل مفتوح المصدر يعتمد على Python، يمنحك التحكم الكامل ويوفر عليك آلاف الدولارات سنويًا.",
+    "url": "/ar/open-source/scrapy",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "تحويل الحاسوب إلى \"مساعد شخصي\" حقيقي يفهم الواجهات ويتفاعل معها",
+    "description": "اكتشف وتعلم UI-TARS Desktop الوكيل الذكي (AI Agent) الصيني المفتوح المصدر لأتمتة المهام المعقدة بخصوصية كاملة.",
+    "url": "/ar/open-source/UI-TARS",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "استنساخ الصوت مجاناً وبدون إنترنت: حول أي نص إلى صوت احترافي على جهازك",
+    "description": "تعلم استنساخ الصوت مجانا على جهازك باستخدام Voicebox. بديل ElevenLabs مفتوح المصدر يوفر خصوصية كاملة وجودة احترافية بدون اشتراك.",
+    "url": "/ar/open-source/voicebox",
+    "lang": "ar",
+    "category": "open-source"
+  },
+  {
+    "title": "ما هو AI Agent؟ شرح بسيط مع أفكار مشاريع حقيقية يمكن بناؤها في 2026 و2027",
+    "description": "تعرف على مفهوم AI Agent أو الوكيل الذكي، كيف يعمل، أنواعه المختلفة، ولماذا أصبح أحد أهم مشاريع الذكاء الاصطناعي في 2026 و2027 مع أمثلة واقعية ونصائح عملية للبدء.",
+    "url": "/ar/projects/aiagent",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "10 أفكار مواقع يمكنك بناؤها بالذكاء الاصطناعي والربح منها في 2026",
+    "description": "اكتشف 10 أفكار مواقع يمكنك بناؤها باستخدام الذكاء الاصطناعي والبدء في الربح منها. دليل عملي للمبتدئين لإنشاء مشاريع رقمية ناجحة.",
+    "url": "/ar/projects/aiweb10",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "كيف تربح المال من الأتمتة (Automation) في 2026 . دليل عملي لبناء مشاريع بدون برمجة",
+    "description": "تعلم ما هي الأتمتة Automation وكيف يمكن استخدامها لربح المال وبناء مشاريع رقمية مربحة. دليل عملي يشرح أدوات الأتمتة بدون كود وأهم طرق استخدامها في الشركات.",
+    "url": "/ar/projects/automation",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "مشروع شات بوت بالذكاء الاصطناعي . كيف تبني مشروعًا مربحًا في واحد من أسرع المجالات نمواً؟",
+    "description": "دليل شامل يشرح ما هو الشات بوت، لماذا أصبح مجالاً مطلوباً جداً، وكيف يمكنك تحويله إلى مشروع حقيقي باستخدام البرمجة أو أدوات No-Code وOpen Source.",
+    "url": "/ar/projects/chatbot1",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "كيف تبني موقعًا احترافيًا مجانًا خطوة بخطوة (حتى لو لم تعرف البرمجة)",
+    "description": "دليل عملي يشرح كيف تبني موقعًا احترافيًا مجانًا باستخدام الذكاء الاصطناعي و Next.js. تعلم الخطوات من اختيار الفكرة إلى نشر الموقع على Vercel بدون استضافة مدفوعة.",
+    "url": "/ar/projects/creatwebsiteforfree",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": ": كيف تبني مشروع برمجيات يحقق دخلاً متكرراً من الصفر؟ . الدليل الشامل للـ SaaS في 2026 ",
+    "description": "تعرف على مفهوم الـ SaaS (البرمجيات كخدمة)، وكيف تحول فكرة بسيطة إلى مشروع مربح في 2026. دليل تعليمي شامل للمبتدئين يشرح الفرق بين البناء بالأكواد وبدونها، مع أفضل 10 أفكار SaaS ناجحة وتوقعات الأرباح .",
+    "url": "/ar/projects/saas",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "أفضل 10 أفكار مشاريع بالذكاء الاصطناعي بين 2027 و2028 (Top 10 AI Projects)",
+    "description": "اكتشف أفضل 10 أفكار مشاريع مستقبلية في مجال الذكاء الاصطناعي بين 2026 و2025، مع شرح مبسط لكل مشروع وأمثلة واقعية توضح كيف يمكن تحويل هذه الأفكار إلى مشاريع مربحة.",
+    "url": "/ar/projects/top10",
+    "lang": "ar",
+    "category": "projects"
+  },
+  {
+    "title": "أفضل عملاء الذكاء الاصطناعي (AI Agents) في 2026: الدليل الشامل لأتمتة حياتك وعملك",
+    "description": "وداعاً لمجرد الدردشة؛ 2026 هو عام الـ AI Agents. اكتشف أفضل الأدوات التي تنفذ المهام بدلاً منك، من البرمجة التلقائية إلى إدارة التجارة الإلكترونية، وكيف تستخدمها مجاناً لتوفير 40 ساعة عمل أسبوعياً.",
+    "url": "/ar/tools/aiagent",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "أكثر من 320,000 API مجاني لبناء تطبيقاتك في 2026: كنز المطورين الذي لا يعرفه الكثيرون",
+    "description": "هل تبحث عن APIs مجانية لمشروعك؟ اكتشف أضخم مستودع يضم مئات الآلاف من الـ APIs العامة لبناء تطبيقات احترافية في مجالات الذكاء الاصطناعي، المال، والرياضة دون دفع دولار واحد.",
+    "url": "/ar/tools/apiforfree",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "كيف تصغّر حجم أي فيديو بدون فقدان الجودة وبدون إنترنت في 2026؟ أفضل طريقة مجانية تمامًا",
+    "description": "تعبت من فيديوهات تأخذ مساحة كبيرة في هاتفك أو حاسوبك؟ تعلم كيف تضغط الفيديو بجودة عالية جدًا وبدون أي تكلفة أو اتصال بالإنترنت. دليل بسيط للمبتدئين يشرح أداة مجانية سهلة جدًا تعمل على ويندوز، ماك ولينكس.",
+    "url": "/ar/tools/CompressO",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "جوجل تطلق تطبيق Doppl: ثورة الذكاء الاصطناعي التي ستغير طريقة تسوقك للملابس للأبد",
+    "description": "تعرف على Doppl، ابتكار Google Labs الجديد لتجربة الملابس افتراضياً. اكتشف كيف حصل هذا التطبيق على لقب أفضل ابتكارات 2025 من مجلة TIME وكيف يمكنك استخدامه لتحسين ستايلك الشخصي.",
+    "url": "/ar/tools/doppl",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "هل تعبت من التنقل بين عشرات النوافذ؟ إليك السر لاستعادة تركيزك وتنظيم حياتك الرقمية",
+    "description": "هل يضيع وقتك بين تبويبات واتساب وتيليغرام وجيميل؟ اكتشف الحل النهائي لجمع كل تطبيقاتك في واجهة واحدة، وتوفير موارد جهازك، وزيادة إنتاجيتك بنسبة 200% بدون تتبع.",
+    "url": "/ar/tools/ferdium",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "توليد الصور بالذكاء الاصطناعي مجاناً بدون تسجيل: أفضل الطرق العملية في 2026",
+    "description": "دليل شامل لتوليد صور احترافية باستخدام الذكاء الاصطناعي دون الحاجة لإنشاء حساب أو دفع اشتراك. تجربة Raphael.app ونماذج FLUX مع نصائح عملية وأمثلة.",
+    "url": "/ar/tools/FreeAi_image_Gene-raphael",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": " كيف تحرر فيديوهاتك باحترافية داخل المتصفح فقط في 2026؟ وداعاً لثقل البرامج .",
+    "description": "هل تكره انتظار تثبيت Premiere Pro؟ اكتشف FreeCut، الأداة الثورية التي تمنحك مونتاجاً احترافياً بمؤثرات WebGPU وتقنية Whisper مباشرة من متصفحك وبخصوصية كاملة.",
+    "url": "/ar/tools/freeCut",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "أكثر من 300,000 تصميم جاهز للتحميل مجاناً . أضخم مكتبة تصاميم تيشرتات في 2026",
+    "description": "هل تبدأ مشروعك في الطباعة عند الطلب (POD)؟ إليك كنز يضم 300 ألف تصميم تيشرت احترافي وعالي الجودة لبدء مبيعاتك فوراً دون الحاجة لمصمم.",
+    "url": "/ar/tools/FreeT-ShirtDesigns",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "GitDrop: تحميل أي مشروع من GitHub بنقرة واحدة بدون Terminal أو Git",
+    "description": "اكتشف أداة GitDrop التي تتيح تحميل أي Repository من GitHub كملف ZIP بسرعة فائقة دون الحاجة لأوامر Git أو تثبيت أي برنامج. تجربة كاملة ومميزات وعيوب.",
+    "url": "/ar/tools/gitdrop.tech",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": " كيف تُثبّت وتستخدم أي برنامج مفتوح المصدر من GitHub بسهولة؟",
+    "description": "هل تجد صعوبة في التعامل مع المشاريع على منصة GitHub؟ تعلم ببساطة كيف تحول المجلدات البرمجية إلى برامج تعمل على جهازك، واكتشف الفرق بين النسخ الجاهزة والكود المصدري.",
+    "url": "/ar/tools/github",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": " كيف تحصل على مدرس خصوصي  بالذكاء الاصطناعي ؟",
+    "description": "وداعاً للتشتت في التعلم الذاتي! اكتشف ميزة Guided Learning الجديدة في Google Gemini التي تحول الذكاء الاصطناعي إلى مدرس خصوصي يشرح لك الدروس خطوة بخطوة.",
+    "url": "/ar/tools/Guided-Learning",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "كيف تجد أفكار تطبيقات و مواقع و أفكار SaaS ناجحة عبر التجسس القانوني على مشاريع Lovable؟",
+    "description": "تعلم كيف تستخدم محرك بحث Google للكشف عن أفكار مشاريع حقيقية ونماذج أولية (MVPs) مهجورة على منصة Lovable لبناء مشروعك القادم.",
+    "url": "/ar/tools/HowtoFindSuccessfulAppAr",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "لا كود بعد اليوم! بناء تطبيق ذكاء اصطناعي خاص بك في أقل من ساعة باستخدام Google Opal",
+    "description": "تعرف على منصة Google Opal الثورية المدعومة بـ Gemini. دليل شامل للمبتدئين لبناء تطبيقات AI مخصصة بدون برمجة، ربطها بـ Google Sheets، وتحويل أفكارك إلى أدوات رقمية في دقائق.",
+    "url": "/ar/tools/opal-google-landing",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "بديل CapCut مجاني 100% في المتصفح بدون تحميل أو اشتراك أو علامة مائية في 2026",
+    "description": "تعبت من علامة CapCut المائية والاشتراك المدفوع؟ جرب أقوى بديل مجاني يعمل مباشرة في المتصفح: OpenCut. مونتاج احترافي متعدد المسارات، معاينة حية، تصدير 4K، وكل شيء بدون تثبيت أو حساب. دليل سريع للبدء الآن.",
+    "url": "/ar/tools/OpenCut",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "أفضل 5 مصادر للحصول على برومبت (Prompt) احترافي في 2026",
+    "description": "دليلك الشامل لأفضل مكتبات الأوامر (Prompts) الجاهزة. اكتشف مصادر سرية ومفتوحة المصدر لرفع كفاءة استخدامك لـ ChatGPT و Claude و Gemini.",
+    "url": "/ar/tools/promptsai",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "الدليل الشامل لإنشاء فيديوهات القصص المرعبة والغامضة . كيف تربح آلاف الدولارات في 2026؟",
+    "description": "يمكنك الآن إنشاء فيديوهات \"فيرالية\" (Viral) للقصص المرعبة باستخدام الذكاء الاصطناعي فقط، دون الحاجة لظهورك الشخصي. السر يكمن في دمج سيناريوهات Claude AI مع شخصيات ثلاثية الأبعاد من Nano Banana 2 وتحريكها عبر Veo أو Kling AI. هذا النوع من المحتوى يحقق أرباحاً تتراوح بين 100$ إلى 5000$ شهرياً عبر TikTok وYouTube Shorts بفضل معدلات الاحتفاظ العالية بالجمهور.",
+    "url": "/ar/tools/scaryreels",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "محرك بحث تيليجرام . كيف تجد آلاف القنوات والمجموعات العامة بسهولة  في 2026",
+    "description": "هل تعبت من البحث العشوائي داخل تيليجرام؟ اكتشف  أقوى محرك بحث مخصص للوصول إلى آلاف القنوات والمجموعات العامة والمحتوى المتخصص في ثوانٍ.",
+    "url": "/ar/tools/telegago",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "أكثر من 5600 أيقونة SVG مجانية: المكتبة الشاملة لمطوري الويب والسحاب",
+    "description": "وفر ساعات من البحث مع مكتبة thesvg التي توفر آلاف الأيقونات عالية الجودة، بما في ذلك أيقونات AWS وAzure وGCP والعلامات التجارية العالمية مجاناً.",
+    "url": "/ar/tools/thesvgicons",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": " أكثر من 1700 مورد لتصميم المستقبل في 2026 . دليلك الشامل لمكتبة Toools.design الضخمة ",
+    "description": "استعرض مكتبة Toools.design الضخمة التي تضم أفضل أدوات التصميم، القوالب الجاهزة، وأدوات الذكاء الاصطناعي. تعلم كيف تسرع عملك الإبداعي مع تجربة حقيقية من مؤسس خوارزمي.",
+    "url": "/ar/tools/toools.design",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "Yoink: انسخ أي المحتوى من الإنترنت بدون إعلانات أو من أي رابط في ثوانٍ ",
+    "description": "تعلم كيف تستخدم Yoink لاستخراج المحتوى من الروابط وتحويل المقال إلى Markdown بضغطة زر. أداة أتمتة مثالية للمطورين وصناع المحتوى التقني.",
+    "url": "/ar/tools/Yionk.ar",
+    "lang": "ar",
+    "category": "tools"
+  },
+  {
+    "title": "About Us",
+    "description": "Welcome to khawarizmAi, the technical platform specializing in exploring the horizons of Artificial Intelligence and simplifying modern technologies for developers and creators.",
+    "url": "/en/about-us/khawarizmai",
+    "lang": "en",
+    "category": "about-us"
+  },
+  {
+    "title": "Claude Certified Architect: Secure Your Elite Status Before 2026",
+    "description": "Anthropic launches its first official certification for AI engineers. Learn how to earn your Claude Certified Architect badge for free and join top firms like Accenture and Deloitte.",
+    "url": "/en/academy/Claude-Certified-Architect",
+    "lang": "en",
+    "category": "academy"
+  },
+  {
+    "title": "Best Certified Artificial Intelligence Courses for Beginners (No Programming)",
+    "description": "Discover the best free courses to learn the basics of artificial intelligence without programming experience. A simple guide covering popular courses such as AI for Everyone, Elements of AI, and IBM AI Fundamentals.",
+    "url": "/en/academy/courseai",
+    "lang": "en",
+    "category": "academy"
+  },
+  {
+    "title": "How to Learn Programming in 2026: Start from Zero and Build Your Own AI Apps",
+    "description": "Discover the concept of programming for beginners in 2026. Learn how to build websites, apps, and SaaS projects for free. Explore programming secrets and the best languages to start with, featuring personal tips from the Khawarizmai blog.",
+    "url": "/en/academy/Programming",
+    "lang": "en",
+    "category": "academy"
+  },
+  {
+    "title": "YouTube Faceless Course 2026: Build Your Digital Empire & Generate Income Without Showing Your Face",
+    "description": "Learn how to build a high-income YouTube channel using automation. This Academy guide covers everything from mindset to scaling your digital asset in 2026.",
+    "url": "/en/academy/youtube",
+    "lang": "en",
+    "category": "academy"
+  },
+  {
+    "title": "Discover the open-source tool Deep-Live-Cam . Your complete guide to real-time face swapping with stunning accuracy",
+    "description": "Discover the open-source tool Deep-Live-Cam that enables real-time face swapping during live streams with cinematic quality, while preserving facial expressions and mouth movements with remarkable accuracy.",
+    "url": "/en/open-source/deep-live-cam",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Goodbye to expensive subscriptions . how to use Goose to automate your software projects locally?",
+    "description": "Discover Goose, the open-source software agent that can save you hundreds of dollars. Learn how to automate engineering tasks, build projects from scratch, and fix programming errors directly on your machine with complete privacy.",
+    "url": "/en/open-source/goose",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Jan. How to Run the Most Powerful AI Models on Your Computer with Full Privacy and Offline",
+    "description": "Jan, the open-source alternative to ChatGPT. A complete guide on running AI models like Llama and DeepSeek locally on your machine, while keeping your data private and avoiding subscription costs.",
+    "url": "/en/open-source/janai",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Discover the open-source tool MeetScribe that allows you to turn meeting recordings into smart transcripts and summaries using local AI",
+    "description": "Discover the open-source tool MeetScribe that allows you to turn meeting recordings into smart transcripts and summaries using local artificial intelligence (WhisperX and Ollama) without requiring an internet connection or monthly subscriptions.",
+    "url": "/en/open-source/meetscribe",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Free CapCut Pro Alternative with No Subscription! Discover OpenCut: The Best Open Source Video Editor in 2026",
+    "description": "Tired of CapCut's limitations? Discover OpenCut, the open-source video editing tool taking GitHub by storm. Learn how to edit videos professionally, with no watermarks and no monthly fees.",
+    "url": "/en/open-source/opencut",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "How to extract data from any website quickly and for free in 2026 without monthly bills or limits?",
+    "description": "Learn how to extract structured data from websites efficiently and without ongoing costs. A comprehensive guide to the most powerful open-source Python framework, giving you full control and saving you thousands of dollars annually.",
+    "url": "/en/open-source/scrapy",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Turning the computer from a simple command-executing machine into a real \"personal assistant\" that understands interfaces and interacts with them.",
+    "description": "Discover and learn about UI-TARS Desktop, the Chinese open-source AI Agent. Automate complex tasks, browse websites locally with full privacy even without Internet access. UI-TARS Desktop allows you to control your computer.",
+    "url": "/en/open-source/UI-TARS",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "Free Offline Voice Cloning: Turn Any Text into Professional Speech on Your Device",
+    "description": "Master free voice cloning on your hardware with Voicebox. An open-source ElevenLabs alternative offering total privacy and pro-grade quality without subscriptions.",
+    "url": "/en/open-source/voicebox",
+    "lang": "en",
+    "category": "open-source"
+  },
+  {
+    "title": "What is an AI Agent? A Simple Guide and Real Project Ideas for 2026–2027",
+    "description": "Learn what an AI Agent is, how it works, its main types, and why it is becoming one of the most important artificial intelligence projects in 2026 and 2027.",
+    "url": "/en/projects/aiagent",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "10 website ideas you can build with AI and turn into profitable projects",
+    "description": "Discover 10 practical website ideas you can build using artificial intelligence and modern tools. A beginner-friendly guide to launching online projects.",
+    "url": "/en/projects/aiweb10",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "How to Make Money with Automation in 2026 . A Practical Guide to Building No-Code Projects",
+    "description": "Learn what automation is and how it can help you build profitable digital projects. Discover the best no-code automation tools and how businesses use automation to save time and money.",
+    "url": "/en/projects/automation",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "AI Chatbot Project . How to Build a Profitable Business in One of the Fastest-Growing Fields",
+    "description": "A complete guide explaining what chatbots are, why this field is in high demand, and how you can turn it into a real project using programming, No-Code tools, or open-source platforms.",
+    "url": "/en/projects/chatbot1",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "How to build a professional website for free (even if you don’t know how to code)",
+    "description": "A practical guide explaining how to build a professional website for free using AI and Next.js. Learn the full process from choosing your idea to publishing your site on Vercel.",
+    "url": "/en/projects/creatwebsitefree",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "SaaS Guide 2026: How to Build a Recurring Revenue Software Project from Scratch",
+    "description": "Learn the concept of SaaS (Software as a Service) and how to turn a simple idea into a profitable project in 2026. A comprehensive guide for beginners on Code vs. No-code, top 10 SaaS ideas, and revenue projections.",
+    "url": "/en/projects/saas",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "Top 10 AI Project Ideas for 2027–2028",
+    "description": "Discover the top 10 artificial intelligence project ideas expected to shape the future between 2025 and 2026, with simple explanations and real-world examples.",
+    "url": "/en/projects/top10",
+    "lang": "en",
+    "category": "projects"
+  },
+  {
+    "title": "The Best AI Agents of 2026: The Ultimate Guide to Automating Your Life and Business",
+    "description": "Goodbye to simple chatting; 2026 is the year of AI Agents. Discover the top tools that execute tasks for you—from autonomous coding to e-commerce management—and learn how to save 40 hours a week using free AI tools.",
+    "url": "/en/tools/aiagent",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "320,000+ Free APIs to Build Your Apps in 2026: The Ultimate Developer's Goldmine",
+    "description": "Hunting for free APIs? Discover the largest repository of public APIs to build professional-grade apps in AI, Finance, and Sports—without spending a single dollar.",
+    "url": "/en/tools/apiforfree",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "How to Compress Any Video Without Quality Loss Offline in 2026? The Best 100% Free Method",
+    "description": "Tired of videos taking up too much space on your phone or computer? Learn how to compress video with high quality, at no cost, and without an internet connection. A simple beginner's guide to a free tool that works on Windows, Mac, and Linux.",
+    "url": "/en/tools/compressO",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Opportunity of a Lifetime? Meta Pays You Up to $3,000 Monthly to Lure You from TikTok and YouTube! Everything You Need to Know About Creator Fast Track",
+    "description": "Are you a content creator? Meta has launched the Creator Fast Track program to attract influencers with guaranteed monthly salaries of up to $3,000 for just 15 videos. Discover the requirements, how to apply, and why you don't need a specific view count!",
+    "url": "/en/tools/creator-fast-track",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Google Labs Launches Doppl: The AI Fashion Revolution That Will Redefine Online Shopping",
+    "description": "Discover Doppl, the latest Google Labs innovation for virtual fashion try-ons. Recognized by TIME as one of the best inventions of 2025, Doppl uses advanced AI to create a personalized shopping experience.",
+    "url": "/en/tools/doppl",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Tired of Switching Between Dozens of Windows? Here is the Secret to Regaining Your Focus",
+    "description": "Losing time between WhatsApp, Telegram, and Gmail tabs? Discover the ultimate solution to unify all your apps in one interface, save device resources, and boost productivity by 200%.",
+    "url": "/en/tools/ferdium",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Free AI Image Generation Without Sign-up: Best Practical Methods in 2026",
+    "description": "A complete guide to generating professional AI images instantly without creating an account or paying for credits. Hands-on experience with Raphael.app and FLUX models, including practical tips and examples.",
+    "url": "/en/tools/FreeAi_image_Gene-raphael.app",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Pro Video Editing Right in Your Browser: Goodbye Heavy Installs",
+    "description": "Tired of the Adobe Premiere bloat? Meet FreeCut—a revolutionary browser-based editor featuring WebGPU effects and Whisper AI. Professional editing with total privacy.",
+    "url": "/en/tools/freeCut",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "300,000+ Free T-Shirt Designs: The Ultimate 2026 Goldmine for POD Sellers",
+    "description": "Launch your Print on Demand business with a massive library of 300k+ professional t-shirt designs. Ready-to-print, high quality, and 100% free.",
+    "url": "/en/tools/FreeT-ShirtDesigns",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "GitDrop: Download Any GitHub Project with One Click – No Terminal or Git Needed",
+    "description": "Discover GitDrop, a simple tool that lets you download any GitHub repository as a ZIP file instantly without using Terminal or installing Git. Full review with pros and cons.",
+    "url": "/en/tools/gitdrop.tech",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "The Mystery of Folders: How to Easily Install and Use Any Open Source Program from GitHub",
+    "description": "Struggling with GitHub projects? Learn how to turn code repositories into working apps on your machine and understand the difference between Releases and Source Code.",
+    "url": "/en/tools/github",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "How to Get Your Own AI Private Tutor",
+    "description": "Stop getting lost in the self-learning maze! Discover Google Gemini's new Guided Learning feature that turns AI into a private tutor, guiding you through lessons step-by-step.",
+    "url": "/en/tools/Guided-Learning",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "How to Find Winning App and SaaS Ideas via Legal Spying on Lovable Projects",
+    "description": "Master the art of Google Dorking to uncover real project ideas and abandoned MVPs on Lovable. A step-by-step guide to smarter market research for your next SaaS.",
+    "url": "/en/tools/HowtoFindSuccessfulApp",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "No-Code is Here! Build Your Own AI App in Under an Hour with Google Opal",
+    "description": "Discover Google Opal, the revolutionary Gemini-powered platform. A comprehensive beginner's guide to building custom AI apps without coding, integrating Google Sheets, and automating your workflow in minutes.",
+    "url": "/en/tools/opal-google-landing",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "100% Free CapCut Alternative in Browser: No Download, No Subscription, No Watermark in 2026",
+    "description": "Tired of CapCut's watermark and paid subscriptions? Try the most powerful free alternative that works directly in your browser: OpenCut. Professional multi-track editing, live preview, 4K export, all without installation or an account. Quick guide to start now.",
+    "url": "/en/tools/OpenCut",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Top 5 Sources for Professional AI Prompts in 2026",
+    "description": "Your comprehensive guide to the best ready-to-use prompt libraries. Discover secret and open-source resources to master ChatGPT, Claude, and Gemini.",
+    "url": "/en/tools/prompysaien",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "The Complete Guide to Creating Horror and Mystery Story Videos. How to Earn Thousands of Dollars in 2026? (AI horror videos)",
+    "description": "You can now create \"viral\" horror story videos using only artificial intelligence, without showing your face. The secret lies in combining Claude AI scripts with 3D characters from Nano Banana 2 and animating them through Veo or Kling AI. This type of content can generate between $100 and $5000 per month on TikTok and YouTube Shorts thanks to high audience retention rates.",
+    "url": "/en/tools/scaryreels",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Telegram Search Engine: How to Find Thousands of Public Channels & Groups Easily in 2026",
+    "description": "Tired of hitting dead ends with Telegram's internal search? Discover Telegago, the most powerful custom search engine to access niche channels and communities in seconds.",
+    "url": "/en/tools/telegago",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "5600+ Free SVG Icons: The Ultimate Library for Web and Cloud Developers",
+    "description": "Save hours of searching with thesvg.org. Access thousands of high-quality icons, including AWS, Azure, GCP, and global brands for free.",
+    "url": "/en/tools/thesvgfree",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Over 1700 Resources to Design the Future in 2026. Your Complete Guide to the Massive Toools.design Library",
+    "description": "Explore the huge Toools.design library featuring the best design tools, ready-made templates, and AI tools. Learn how to accelerate your creative work with a real experience from the founder of Khawarizmai.",
+    "url": "/en/tools/toools.design",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "Yoink: Extract Clean Content from Any Link Without Ads in Seconds",
+    "description": "Master Yoink for seamless content extraction and Markdown conversion. The ultimate automation tool for developers and technical content creators.",
+    "url": "/en/tools/Yoink.en",
+    "lang": "en",
+    "category": "tools"
+  },
+  {
+    "title": "À Propos",
+    "description": "Bienvenue sur khawarizmAi, la plateforme technique spécialisée dans l'exploration des horizons de l'Intelligence Artificielle et la simplification des technologies modernes pour les développeurs et les créateurs.",
+    "url": "/fr/about-us/khawarizmai",
+    "lang": "fr",
+    "category": "about-us"
+  },
+  {
+    "title": "Certification Claude Certified Architect : Devenez l'élite de l'IA avant 2026",
+    "description": "Anthropic lance sa première certification officielle pour les ingénieurs IA. Découvrez comment obtenir votre titre de Claude Certified Architect gratuitement et rejoignez les rangs d'Accenture ou Deloitte.",
+    "url": "/fr/academy/Claude-Certified-Architect",
+    "lang": "fr",
+    "category": "academy"
+  },
+  {
+    "title": "Les meilleures formations certifiées en intelligence artificielle pour débutants (sans programmation)",
+    "description": "Découvrez les meilleures formations gratuites pour apprendre les bases de l’intelligence artificielle sans expérience en programmation. Un guide simple qui présente des cours reconnus comme AI for Everyone, Elements of AI et IBM AI Fundamentals.",
+    "url": "/fr/academy/formationai",
+    "lang": "fr",
+    "category": "academy"
+  },
+  {
+    "title": "Comment Apprendre la Programmation en 2026 : Partir de Zéro et Créer vos Propres Applications IA",
+    "description": "Découvrez le concept de la programmation pour les débutants en 2026. Apprenez à créer des sites, des applications et des projets SaaS gratuitement. Explorez les secrets du code et les meilleurs langages, avec des conseils personnels du blog Khawarizmai.",
+    "url": "/fr/academy/Programming",
+    "lang": "fr",
+    "category": "academy"
+  },
+  {
+    "title": "Formation YouTube Faceless 2026 : Créez votre Empire Digital sans vous Montrer",
+    "description": "Découvrez comment générer des revenus passifs sur YouTube grâce à l'automatisation. Un guide complet de l'académie sur les algorithmes, la création de contenu et le scaling.",
+    "url": "/fr/academy/youtube",
+    "lang": "fr",
+    "category": "academy"
+  },
+  {
+    "title": "Découvrez l’outil open source Deep-Live-Cam . Votre guide complet pour changer de visage en direct avec une précision impressionnante",
+    "description": "Découvrez l’outil open source Deep-Live-Cam qui permet de remplacer les visages en temps réel lors des diffusions en direct avec une qualité cinématographique, tout en conservant les expressions faciales et les mouvements des lèvres avec une précision remarquable.",
+    "url": "/fr/open-source/deep-live-cam",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Adieu aux abonnements coûteux . comment utiliser Goose pour automatiser vos projets logiciels localement ?",
+    "description": "Découvrez Goose, l’agent logiciel open source qui peut vous faire économiser des centaines de dollars. Apprenez comment automatiser vos tâches d’ingénierie, créer vos projets à partir de zéro et corriger les erreurs de programmation directement sur votre machine, en toute confidentialité.",
+    "url": "/fr/open-source/goose",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Jan. Comment exécuter les modèles d’IA les plus puissants sur votre ordinateur en toute confidentialité et sans Internet",
+    "description": "Jan, l’alternative open source à ChatGPT. Guide complet pour exécuter localement des modèles d’intelligence artificielle comme Llama et DeepSeek sur votre machine, tout en protégeant vos données et en évitant les frais d’abonnement.",
+    "url": "/fr/open-source/janai",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Découvrez l’outil open source MeetScribe qui vous permet de transformer les enregistrements de réunions en transcriptions et résumés intelligents grâce à l’IA locale",
+    "description": "Découvrez l’outil open source MeetScribe qui vous permet de transformer les enregistrements de réunions en transcriptions et résumés intelligents grâce à l’intelligence artificielle locale (WhisperX et Ollama) sans connexion Internet ni abonnements mensuels.",
+    "url": "/fr/open-source/meetscribe",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Alternative gratuite à CapCut Pro sans abonnement ! Découvrez OpenCut : Le meilleur montage vidéo Open Source en 2026",
+    "description": "Fatigué des limites de CapCut ? Découvrez OpenCut, l'outil de montage open-source qui cartonne sur GitHub. Apprenez à monter vos vidéos sans filigrane et sans frais mensuels.",
+    "url": "/fr/open-source/opencut",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Comment extraire les données de n'importe quel site rapidement et gratuitement en 2026 sans factures mensuelles ni limites ?",
+    "description": "Apprenez à extraire des données structurées à partir de sites Web de manière efficace et sans coûts récurrents. Guide complet sur le framework Python open-source le plus puissant.",
+    "url": "/fr/open-source/scrapy",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Transformer l’ordinateur d’une simple machine exécutant des commandes en un véritable « assistant personnel » capable de comprendre les interfaces et d’interagir avec elles.",
+    "description": "Découvrez et apprenez à utiliser UI-TARS Desktop, l’agent intelligent (AI Agent) open source d’origine chinoise. Automatisez des tâches complexes, naviguez sur des sites localement et en toute confidentialité sans connexion Internet. UI-TARS Desktop vous permet de contrôler votre ordinateur.",
+    "url": "/fr/open-source/UI-TARS",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Clonage vocal gratuit et hors ligne : transformez n'importe quel texte en voix professionnelle sur votre appareil",
+    "description": "Apprenez à cloner des voix gratuitement avec Voicebox. Une alternative open-source à ElevenLabs offrant confidentialité totale et qualité pro sans abonnement.",
+    "url": "/fr/open-source/voicebox",
+    "lang": "fr",
+    "category": "open-source"
+  },
+  {
+    "title": "Qu’est-ce qu’un AI Agent ? Guide simple et idées de projets réels en 2026-2027",
+    "description": "Découvrez ce qu’est un AI Agent (agent intelligent), comment il fonctionne, ses principaux types et pourquoi il devient l’un des projets d’intelligence artificielle les plus prometteurs en 2026 et 2027.",
+    "url": "/fr/projects/aiagent",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "10 idées de sites web que vous pouvez créer avec l’intelligence artificielle et rentabiliser",
+    "description": "Découvrez 10 idées de sites web que vous pouvez créer grâce à l’intelligence artificielle et transformer en projets rentables. Un guide simple pour débuter sur internet.",
+    "url": "/fr/projects/aiweb10",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Comment gagner de l’argent avec l’automatisation (Automation) en 2026 . guide pratique pour créer des projets sans coder",
+    "description": "Découvrez ce qu’est l’automatisation et comment gagner de l’argent grâce aux systèmes d’automatisation et à l’intelligence artificielle. Un guide simple pour créer des projets automatisés sans programmation.",
+    "url": "/fr/projects/automation",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Projet de chatbot avec intelligence artificielle . comment créer un projet rentable dans l’un des domaines à la croissance la plus rapide ?",
+    "description": "Un guide complet expliquant ce qu’est un chatbot, pourquoi ce domaine est devenu très demandé et comment le transformer en un véritable projet en utilisant la programmation ou des outils No-Code et Open Source.",
+    "url": "/fr/projects/chatbot1",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Comment créer un site web professionnel gratuitement (même sans savoir programmer)",
+    "description": "Découvrez comment créer un site web professionnel gratuitement en utilisant l’intelligence artificielle et Next.js. Un guide simple pour débutants, de l’idée du site jusqu’à sa publication sur Vercel.",
+    "url": "/fr/projects/createwebsitefree",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Guide SaaS 2026 : Comment créer un projet logiciel à revenus récurrents de zéro",
+    "description": "Découvrez le concept du SaaS (Software as a Service) et comment transformer une idée en projet rentable en 2026. Guide complet pour débutants : Code vs No-code, idées de projets et revenus.",
+    "url": "/fr/projects/saas",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Les 10 meilleures idées de projets en intelligence artificielle pour 2027–2028",
+    "description": "Découvrez les 10 meilleures idées de projets en intelligence artificielle pour les années 2025 et 2026, avec des explications simples et des exemples réels montrant comment transformer ces idées en projets rentables.",
+    "url": "/fr/projects/top10",
+    "lang": "fr",
+    "category": "projects"
+  },
+  {
+    "title": "Les Meilleurs Agents IA de 2026 : Le Guide Ultime pour Automatiser votre Vie et votre Travail",
+    "description": "Oubliez le simple chat ; 2026 est l'année des Agents IA. Découvrez les meilleurs outils qui exécutent des tâches à votre place, du codage autonome à la gestion e-commerce, et gagnez 40 heures par semaine.",
+    "url": "/fr/tools/aiagent",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Plus de 320 000 API gratuites pour vos apps en 2026 : Le trésor caché des développeurs",
+    "description": "À la recherche d'API gratuites pour votre projet ? Découvrez le plus grand répertoire d'API publiques pour créer des applications pro (IA, Finance, Sport) sans dépenser un centime.",
+    "url": "/fr/tools/apiforfree",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Comment dénicher des idées d'applications et de SaaS à succès via l'espionnage légal sur Lovable",
+    "description": "Apprenez à utiliser Google Dorking pour découvrir des projets réels et des MVPs abandonnés sur Lovable afin de bâtir votre prochain business.",
+    "url": "/fr/tools/CommenttrouverdesideesApp",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Comment réduire la taille de n'importe quelle vidéo sans perte de qualité et sans internet en 2026 ? La meilleure méthode 100% gratuite",
+    "description": "Fatigué des vidéos qui prennent trop de place sur votre téléphone ou ordinateur ? Apprenez à compresser vos vidéos en haute qualité, sans frais et sans connexion internet. Un guide simple pour débutants sur un outil gratuit fonctionnant sur Windows, Mac et Linux.",
+    "url": "/fr/tools/compressO",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "L'opportunité d'une vie ? Meta vous paie jusqu'à 3 000 $ par mois pour vous attirer loin de TikTok et YouTube ! Tout savoir sur le Creator Fast Track",
+    "description": "Êtes-vous un créateur de contenu ? Meta a lancé le programme Creator Fast Track pour attirer les influenceurs avec des salaires mensuels garantis allant jusqu'à 3 000 $ pour seulement 15 vidéos. Découvrez les conditions, comment postuler et pourquoi vous n'avez pas besoin d'un nombre de vues spécifique !",
+    "url": "/fr/tools/creator-fast-track",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Google Labs Dévoile Doppl : L'IA qui Révolutionne l'Essayage Virtuel et la Mode",
+    "description": "Découvrez Doppl, la nouvelle plateforme de Google Labs pour l'essayage virtuel de vêtements. Élu l'une des meilleures inventions de 2025 par TIME, Doppl change la donne pour le shopping en ligne.",
+    "url": "/fr/tools/doppl",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Fatigué de naviguer entre des dizaines de fenêtres ? Voici le secret pour retrouver votre concentration",
+    "description": "Perdez-vous du temps entre les onglets WhatsApp, Telegram et Gmail ? Découvrez la solution ultime pour regrouper vos applications dans une seule interface et booster votre productivité.",
+    "url": "/fr/tools/ferdium",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Génération d'images par IA gratuite sans inscription : Les meilleures méthodes pratiques en 2026",
+    "description": "Guide complet pour générer des images professionnelles par intelligence artificielle instantanément sans créer de compte ni payer d'abonnement. Expérience avec Raphael.app et les modèles FLUX, conseils pratiques et exemples.",
+    "url": "/fr/tools/FreeAi_image_rapahel.fr",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Montage Pro sur Navigateur : Dites adieu aux logiciels lourds en 2026",
+    "description": "Marre d'attendre l'ouverture de Premiere Pro ? Découvrez FreeCut, l'outil révolutionnaire qui apporte le montage pro via WebGPU et Whisper directement dans votre navigateur, avec une confidentialité totale.",
+    "url": "/fr/tools/freeCut",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "300 000+ Designs de T-shirts Gratuits : Le Pack Ultime pour le Print on Demand en 2026",
+    "description": "Propulsez votre boutique POD avec plus de 300 000 designs professionnels prêts à l'emploi. Économisez des milliers d'heures et de dollars en design graphique.",
+    "url": "/fr/tools/FreeT-ShirtDesigns",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "GitDrop : Télécharger n'importe quel projet GitHub en un clic – Sans Terminal ni Git",
+    "description": "Découvrez GitDrop, un outil simple qui vous permet de télécharger n'importe quel dépôt GitHub sous forme de fichier ZIP instantanément sans utiliser le Terminal ni installer Git. Revue complète avec avantages et inconvénients.",
+    "url": "/fr/tools/gitdrop.tech",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Le mystère des dossiers : Comment installer et utiliser facilement n'importe quel logiciel Open Source sur GitHub",
+    "description": "Vous avez du mal avec les projets GitHub ? Apprenez simplement comment transformer des dossiers de code en applications fonctionnelles et comprenez la différence entre les Releases et le code source.",
+    "url": "/fr/tools/github",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Comment obtenir un tuteur privé grâce à l'IA ?",
+    "description": "Fini l'éparpillement dans l'auto-apprentissage ! Découvrez Guided Learning sur Google Gemini : l'outil qui transforme l'IA en un professeur particulier pour vous guider étape par étape.",
+    "url": "/fr/tools/Guided-Learning",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Adieu le Code ! Créez votre propre application IA en moins d'une heure avec Google Opal",
+    "description": "Découvrez Google Opal, la plateforme révolutionnaire propulsée par Gemini. Un guide complet pour débutants pour créer des apps IA sans programmation et les lier à Google Sheets.",
+    "url": "/fr/tools/opal-google-landing",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Alternative à CapCut 100% gratuite sur navigateur : Sans téléchargement, sans abonnement, sans filigrane en 2026",
+    "description": "Fatigué du filigrane CapCut et des abonnements payants ? Essayez la meilleure alternative gratuite qui fonctionne directement dans votre navigateur : OpenCut. Montage professionnel multi-pistes, prévisualisation en direct, export 4K, le tout sans installation ni compte. Guide rapide pour commencer maintenant.",
+    "url": "/fr/tools/OpenCut",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Top 5 Sources for Professional AI Prompts in 2026",
+    "description": "Your comprehensive guide to the best ready-to-use prompt libraries. Discover secret and open-source resources to master ChatGPT, Claude, and Gemini.",
+    "url": "/fr/tools/promptsaifr",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Le guide complet pour créer des vidéos d'histoires d'horreur et de mystère. Comment gagner des milliers de dollars en 2026 ? (Vidéos d'horreur IA)",
+    "description": "Vous pouvez désormais créer des vidéos \"virales\" d'histoires d'horreur en utilisant uniquement l'intelligence artificielle, sans apparaître à l'écran. Le secret consiste à combiner des scénarios Claude AI avec des personnages 3D de Nano Banana 2 et à les animer via Veo ou Kling AI. Ce type de contenu peut générer entre 100$ et 5000$ par mois sur TikTok et YouTube Shorts grâce à un fort taux de rétention du public.",
+    "url": "/fr/tools/scaryreels",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Moteur de recherche Telegram : Comment trouver des milliers de canaux et groupes publics en 2026",
+    "description": "Marre des recherches infructueuses sur Telegram ? Découvrez Telegago, le moteur de recherche ultime pour accéder à des milliers de canaux spécialisés en quelques secondes.",
+    "url": "/fr/tools/telegago",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Plus de 5600 icônes SVG gratuites : La bibliothèque ultime pour les développeurs Web et Cloud",
+    "description": "Gagnez des heures de recherche avec thesvg.org. Accédez à des milliers d'icônes haute qualité, incluant AWS, Azure, GCP et des marques mondiales gratuitement.",
+    "url": "/fr/tools/thesvggratuit",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Plus de 1700 ressources pour concevoir l'avenir en 2026. Votre guide complet de la vaste bibliothèque Toools.design",
+    "description": "Découvrez la gigantesque bibliothèque Toools.design qui regroupe les meilleurs outils de design, templates prêts à l'emploi et outils d'IA. Apprenez à accélérer votre travail créatif avec une expérience réelle du fondateur de Khawarizmai.",
+    "url": "/fr/tools/toools.design",
+    "lang": "fr",
+    "category": "tools"
+  },
+  {
+    "title": "Yoink : Copiez n'importe quel contenu web sans publicité en un clic",
+    "description": "Apprenez à utiliser Yoink pour l'extraction de contenu et la conversion d'articles en Markdown. L'outil d'automatisation idéal pour les développeurs et créateurs.",
+    "url": "/fr/tools/Yoink.fr",
+    "lang": "fr",
+    "category": "tools"
+  }
+]

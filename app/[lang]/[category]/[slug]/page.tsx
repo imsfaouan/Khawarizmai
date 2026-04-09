@@ -10,19 +10,29 @@ export async function generateMetadata(props: { params: Promise<{ lang: string, 
   const { lang, category, slug } = await props.params;
   const filePath = path.join(process.cwd(), 'content', lang, category, `${slug}.md`);
  
-  if (!fs.existsSync(filePath)) return { title: "Article non trouvé" };
+  if (!fs.existsSync(filePath)) {
+    return { title: "Article non trouvé" };
+  }
  
   const { data } = matter(fs.readFileSync(filePath, 'utf-8'));
-  const url = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
- 
+  const currentUrl = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
+
+  // إنشاء alternate links للثلاث لغات
+  const alternates: any = {
+    canonical: currentUrl,
+    languages: {
+      ar: `https://www.khawarizmai.xyz/ar/${category}/${slug}`,
+      fr: `https://www.khawarizmai.xyz/fr/${category}/${slug}`,
+      en: `https://www.khawarizmai.xyz/en/${category}/${slug}`,
+    }
+  };
+
   return {
     title: `${data.title} | Khawarizmai`,
     description: data.description || data.title,
-    alternates: {
-      canonical: url,
-    },
+    alternates: alternates,
     openGraph: {
-      url: url,
+      url: currentUrl,
       images: [data.image],
       title: data.title,
       description: data.description,
@@ -75,7 +85,7 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
   // رابط المقالة
   const articleUrl = `https://www.khawarizmai.xyz/${lang}/${category}/${slug}`;
 
-  // === Schema Markup المحسن ===
+  // Schema Markup المحسن
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -139,7 +149,6 @@ export default async function PostPage(props: { params: Promise<{ lang: string, 
       }
     ]
   };
-  // === نهاية Schema Markup ===
 
   // Related Posts
   let relatedPosts: any[] = [];
