@@ -7,7 +7,7 @@ keywords: ["NotebookLM", "NotebookLM tutoriel", "outil gratuit Google", "résum�
 category: "tools"
 ---
 
-![photo](https://res.cloudinary.com/dnavgirzt/image/upload/v1775693113/xww_rpc6g0.png)
+![photo](https://i.ytimg.com/vi/VJg37fVPy9I/maxresdefault.jpg)
 
 Imaginez avoir un professeur qui ne se lasse jamais d’expliquer, un assistant de recherche qui ne dort jamais, et un collègue qui lit tous vos fichiers et les résume en quelques minutes — tout cela gratuitement grâce à Google.
 

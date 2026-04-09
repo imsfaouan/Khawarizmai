@@ -7,7 +7,7 @@ keywords: ["NotebookLM", "NotebookLM tutorial", "free Google tool", "AI PDF summ
 category: "tools"
 ---
 
-![photo](https://res.cloudinary.com/dnavgirzt/image/upload/v1775693113/xww_rpc6g0.png)
+![photo](https://i.ytimg.com/vi/VJg37fVPy9I/maxresdefault.jpg)
 
 Imagine having a tutor who never gets tired of explaining, a tireless research assistant, and a colleague who reads all your files and summarizes them in minutes — all for free from Google.
 
