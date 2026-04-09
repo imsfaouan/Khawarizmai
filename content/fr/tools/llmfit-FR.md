@@ -6,7 +6,6 @@ date: "2026-04-08"
 keywords: ["test de compatibilité LLM", "exécution de modèles IA localement", "llmfit", "vérification RAM GPU pour IA", "modèle IA avant téléchargement", "compatibilité LLM locale"]
 category: "Tools"
 ---
-
 ## Introduction
 
 De nombreux utilisateurs souhaitent désormais essayer d’exécuter des modèles de langage large (LLM) localement — comme Llama, Gemma, Mistral ou Qwen — mais ils rencontrent toujours le même problème courant :
