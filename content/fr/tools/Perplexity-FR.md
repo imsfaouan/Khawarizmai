@@ -49,14 +49,14 @@ Perplexity a atteint **un milliard de requêtes par mois** au premier trimestre 
 
 ## Pourquoi Perplexity est différent ? — 5 fonctionnalités essentielles
 
-### 1. Transparence et sources — La fonctionnalité la plus puissante
+## 1. Transparence et sources — La fonctionnalité la plus puissante
 
 Chaque phrase écrite par Perplexity est accompagnée d’un **numéro** qui vous renvoie à la source originale.
 
 Pourquoi est-ce extrêmement important ?  
 Parce qu’il résout le problème des « hallucinations » dont souffrent les autres modèles d’IA. Quand ChatGPT se trompe, vous ne le savez pas — quand Perplexity se trompe, vous le découvrez immédiatement car chaque information est documentée.
 
-### 2. Recherche en temps réel sur internet
+## 2. Recherche en temps réel sur internet
 
 Contrairement aux versions gratuites de ChatGPT et Claude qui fonctionnent avec des données anciennes, **Perplexity recherche sur le web en temps réel** et vous répond sur des actualités survenues il y a quelques minutes.
 
@@ -66,7 +66,7 @@ Cette différence crée un monde complètement différent lorsque vous recherche
 - Les résultats de matchs
 - Toute information qui change rapidement
 
-### 3. Choisir le modèle qui pense pour vous
+## 3. Choisir le modèle qui pense pour vous
 
 Dans la version Pro, vous pouvez choisir « le cerveau » qui vous répond :
 - **GPT-4o** — pour les tâches créatives
@@ -74,7 +74,7 @@ Dans la version Pro, vous pouvez choisir « le cerveau » qui vous répond :
 - **Gemini** — pour les tâches multimodales
 - **Modèles propres à Perplexity** — pour les recherches rapides
 
-### 4. Copilot — Il vous pose des questions au lieu de deviner
+## 4. Copilot — Il vous pose des questions au lieu de deviner
 
 Si votre question est vague, Perplexity ne devine pas — il **vous pose des questions de clarification** en premier.
 
@@ -85,7 +85,7 @@ Exemple : Si vous écrivez « meilleur téléphone », il vous demandera :
 
 Résultat ? Une réponse personnalisée pour vous spécifiquement.
 
-### 5. Pages — Transformez votre recherche en article organisé
+## 5. Pages — Transformez votre recherche en article organisé
 
 Une fonctionnalité unique qui vous permet de transformer les résultats de recherche en une **« Page » organisée** avec titres, paragraphes et images — que vous pouvez partager avec d’autres comme un article complet.
 
