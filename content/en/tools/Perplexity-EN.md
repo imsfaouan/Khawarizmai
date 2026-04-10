@@ -1,7 +1,7 @@
 ---
 title: "Perplexity vs Google: The Answer Engine That Makes Google Look Outdated in 2026"
 description: "What is the difference between a search engine that gives you links and an answer engine that gives you the information ready-made? Complete guide to Perplexity AI — features, how to use it, and the most powerful professional prompts."
-image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1775693134/Black_and_Ivory_Modern_Name_YouTube_Channel_Art_3_gti0s6.jpg"
+image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1775837856/perplexity1_mjl2m7.webp"
 date: "2026-04-10"
 keywords: ["Perplexity AI tutorial", "AI search engine", "Google alternative 2026", "Perplexity vs Google", "Perplexity prompts", "free AI tools 2026"]
 category: "tools"

@@ -1,7 +1,7 @@
 ---
 title: "Perplexity vs Google : Le moteur de réponses qui fait paraître Google dépassé en 2026"
 description: "Quelle est la différence entre un moteur de recherche qui vous donne des liens et un moteur de réponses qui vous donne l’information prête à l’emploi ? Guide complet sur Perplexity AI — ses fonctionnalités, comment l’utiliser, et les prompts professionnels les plus puissants."
-image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1775693134/Black_and_Ivory_Modern_Name_YouTube_Channel_Art_3_gti0s6.jpg"
+image: "https://res.cloudinary.com/dnavgirzt/image/upload/v1775837856/perplexity1_mjl2m7.webp"
 date: "2026-04-10"
 keywords: ["Perplexity AI tutoriel", "moteur de recherche IA", "alternative Google 2026", "Perplexity vs Google", "prompts Perplexity", "outils IA gratuits 2026"]
 category: "tools"
