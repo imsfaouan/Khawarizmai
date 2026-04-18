@@ -30,7 +30,7 @@ export async function generateMetadata(props: { params: Promise<{ lang: string }
     title: meta.title,
     description: meta.desc,
     icons: { icon: '/favicon.ico' },
-    verification: { google: 'hd8vSauB4oOyAEkQT-AqRp3cMg92_xVE25JCYlGQsPc' },
+    verification: { google: '1N6QvRZoXk29rXbtYFf9by1G-DBF3Z-YSQOLw0XVqcM' },
     alternates: {
       canonical: `https://www.khawarizmai.xyz/${lang}`,
     },
@@ -136,7 +136,6 @@ export default async function RootLayout(props: { children: React.ReactNode, par
             </svg>
           </a>
         </div>
-
       </body>
     </html>
   );
